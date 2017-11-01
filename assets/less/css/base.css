@@ -1,0 +1,477 @@
+/*Основной цвет*/
+/*Цвет плашек*/
+/*Цвет фона*/
+/*Цвет панелей*/
+/*Цвет hover кнопки*/
+/*Базовый шрифт*/
+/*Большой шрифт*/
+/*heading*/
+/*footer*/
+img {
+  max-width: 100%;
+}
+p {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-justify {
+  text-align: justify;
+}
+.text-center {
+  text-align: center;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.ul-unstyled {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.my-flex-row {
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: row;
+}
+h2 {
+  color: #7e5ea7;
+  font-size: 1.875em;
+  font-family: 'MuseoSansBlack';
+  text-transform: uppercase;
+}
+h4 {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-top: 0px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.heading {
+  background: #7e5ea7;
+  text-align: center;
+  margin: 0px 0px 0px 0px;
+}
+.heading a {
+  color: #FFFFFF;
+}
+.tinytext {
+  font-family: 'MuseoSansRegular';
+  font-size: 10px;
+}
+.smalltext {
+  font-family: 'MuseoSansRegular';
+  color: #787878;
+  font-size: 13px;
+  font-weight: 300;
+}
+.mediumtext {
+  font-family: 'MuseoSansRegular';
+  font-weight: 600;
+  font-size: 16px;
+}
+.largetext {
+  font-family: 'MuseoSansBold';
+  font-size: 17px;
+  font-weight: 700;
+}
+section {
+  margin-top: 20px;
+}
+.padding-plaska,
+.heading,
+.vertical_menu ul li a {
+  padding: 16px 0px 15px 0px;
+  margin: 0px 0px 0px 0px;
+}
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+.clear {
+  clear: both;
+  float: none;
+}
+.heightfix {
+  display: block;
+  height: 420px;
+  clear: both;
+  visibility: hidden;
+}
+/*Clear Css*/
+.null {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+a:link,
+a:active,
+a:visited,
+a:focus {
+  outline: none;
+}
+ol,
+ul {
+  list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+blockquote,
+q {
+  quotes: "" "";
+}
+*:focus {
+  outline: none !important;
+}
+/*remove webkit focus outline */
+input {
+  margin: 0;
+  border: none;
+  cursor: pointer;
+}
+/*remove 2px border across top of input */
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  header > .container > .row > .col-lg-5 {
+    width: 38.4%;
+  }
+  header > .container > .row > .col-lg-3 {
+    width: 21%;
+  }
+  header > .container > .row > .col-lg-2 {
+    width: 20%;
+  }
+}
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  header > .container > .row > .col-lg-5 {
+    width: 38.4%;
+  }
+  header > .container > .row > .col-lg-5 .col-lg-7 {
+    width: 55.33333333%;
+  }
+  header > .container > .row > .col-lg-5 .col-lg-5 {
+    width: 43.66666667%;
+  }
+  header > .container > .row > .col-lg-3 {
+    width: 21%;
+  }
+  header > .container > .row > .col-lg-2 {
+    width: 20%;
+  }
+}
+html,
+body,
+#wrapper {
+  height: 100%;
+}
+body {
+  font-family: 'MuseoSansRegular';
+  font-size: 16px;
+  font-weight: 600;
+}
+a {
+  color: #252525;
+  font-size: 13px;
+}
+a:hover {
+  text-decoration: none;
+}
+ul {
+  margin: 0px 0px 0px 0px;
+  list-style: none;
+  line-height: 1;
+  padding: 0px 0px 0px 0px;
+  height: 100%;
+}
+.ul-unstyled {
+  list-style: none;
+}
+#wrapper {
+  min-height: 100% !important;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  height: auto !important;
+}
+header {
+  /*height: 115px;*/
+  font-family: 'MuseoSansRegular';
+  /*Search*/
+}
+header .container {
+  /* padding-left:0px;
+     padding-right:0px;
+   */
+}
+header [class^="icon-"] {
+  color: #7e5ea7;
+}
+header .logo {
+  top: 20px;
+  position: relative;
+}
+header .phone {
+  background-image: url('../img/phone.png');
+  background-position: 40px 0px;
+  background-repeat: no-repeat;
+  padding-left: 32px;
+  line-height: 0.4em;
+  padding-top: 10px;
+}
+header .phone div {
+  position: relative;
+  left: 50px;
+  top: -5px;
+}
+header .phone > div > .smalltext {
+  font-family: 'MuseoSansRegular';
+  color: #787878;
+  font-size: 13px;
+  font-weight: 300;
+  padding-bottom: 10px;
+  padding-top: 16px;
+}
+header .social {
+  padding-top: 15px;
+  font-size: 15px;
+  position: relative;
+  left: 10px;
+}
+header .delivery {
+  padding-top: 12px;
+}
+header .private {
+  padding-top: 8px;
+}
+header .social a {
+  color: #7e5ea7;
+  padding-right: 18px;
+}
+header .social a span {
+  color: #7e5ea7;
+}
+header #callback_btn {
+  position: relative;
+  top: 50px;
+  right: 20px;
+}
+header #searchfield {
+  width: 82%;
+  height: 34px;
+}
+header #btnsearch {
+  position: relative;
+  right: 4px;
+  top: 0px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+header .cartgroup {
+  position: relative;
+  top: 18px;
+}
+header .cart {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b859a2+1,805ea7+100 */
+  background: #b859a2;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #b859a2 1%, #805ea7 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #b859a2 1%, #805ea7 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #b859a2 1%, #805ea7 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b859a2', endColorstr='#805ea7', GradientType=0);
+  /* IE6-9 */
+  padding: 1px 1px 1px 1px;
+  float: left;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+header .cart a {
+  font-size: 15px;
+  text-decoration: none;
+}
+header .cart a span {
+  font-size: 17px;
+}
+header .cart a:hover {
+  text-decoration: none;
+}
+header .cart .box {
+  background: #FFFFFF;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 100;
+  padding: 6px 12px 6px 12px;
+}
+header .site_nav {
+  width: 100%;
+  height: 34px;
+  background: #252525;
+}
+header .site_nav .container {
+  height: 100%;
+}
+header .site_nav .container .row {
+  height: 100%;
+}
+header .site_nav .container .row ul li {
+  display: inline-block;
+  height: 100%;
+  padding-top: 11px;
+}
+header .site_nav .container .row ul li a {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'MuseoSansBold';
+  padding: 12px 35px 8px 35px;
+}
+header .site_nav .container .row ul li:first-child a {
+  padding-left: 0px;
+}
+header .site_nav .container .row ul li:last-child a {
+  padding-right: 0px;
+}
+header .site_nav .container .row ul li:hover {
+  background: #555555;
+}
+/*Vertical menu*/
+.vertical_menu ul li {
+  background: #252525;
+  border-bottom: 1px solid #FFFFFF;
+  cursor: pointer;
+  position: relative;
+}
+.vertical_menu ul li:hover {
+  background: #555555;
+}
+.vertical_menu ul li:hover .submenu {
+  display: block;
+}
+.vertical_menu ul li a {
+  color: #FFFFFF;
+  font-size: 14px;
+  padding-left: 44px;
+  display: block;
+}
+.vertical_menu ul li span:first-child {
+  position: absolute;
+  top: 12px;
+  left: 18px;
+}
+.vertical_menu ul li span.icon {
+  color: #FFFFFF;
+  font-size: 16px;
+  position: static;
+  float: right;
+  padding-right: 9px;
+}
+.vertical_menu ul li .submenu {
+  position: absolute;
+  z-index: 300;
+  top: 0px;
+  left: 100%;
+  width: 80%;
+  display: none;
+}
+.vertical_menu ul li:last-child a {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+/*Footer*/
+footer {
+  height: 420px;
+  margin-top: -402px;
+  color: #b8a7cf;
+  position: relative;
+  font-size: 12px;
+}
+footer a {
+  font-size: 14px;
+  color: #b8a7cf;
+  font-family: 'MuseoSansMedium';
+  font-weight: 700;
+}
+footer a:hover {
+  color: #FFFFFF;
+}
+footer h4 {
+  color: #FFFFFF;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-top: 0px;
+}
+footer h4.mediumtext {
+  font-size: 16px;
+}
+footer .footer_up {
+  width: 100%;
+  height: 334px;
+  padding-top: 52px;
+  background-image: url('../img/footer_bg.jpg');
+  background-size: cover;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -ms-behavior: url(/assets/ie8-support/backgroundsize.min.htc);
+}
+footer .footer_up nav > ul > li {
+  font-size: 14px;
+  line-height: 170%;
+}
+footer .footer_up p {
+  padding-top: 22px;
+}
+footer .footer_up p.mediumtext {
+  padding-top: 22px;
+  font-size: 16px;
+  color: #b8a7cf;
+  text-indent: 0px;
+  line-height: 1.2;
+}
+footer .footer_down {
+  height: 86px;
+  background: #3a124d;
+}
+footer .footer_down .social_footer {
+  float: right;
+}
+footer .footer_down .social_footer a {
+  color: #FFFFFF;
+  font-size: 15px;
+  padding: 8px 10px 8px 10px;
+  margin-top: 24px;
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  float: left;
+  margin-left: 10px;
+}

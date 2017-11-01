@@ -1,0 +1,44 @@
+/*Основной цвет*/
+/*Цвет плашек*/
+/*Цвет фона*/
+/*Цвет панелей*/
+/*Цвет hover кнопки*/
+/*Базовый шрифт*/
+/*Большой шрифт*/
+/*heading*/
+/*footer*/
+@font-face {
+  font-family: 'MuseoSansRegular';
+  src: url('../fonts/MuseoSansRegular/MuseoSansRegular.eot');
+  src: url('../fonts/MuseoSansRegular/MuseoSansRegular.eot?#iefix') format('embedded-opentype'), url('../fonts/MuseoSansRegular/MuseoSansRegular.woff') format('woff'), url('../fonts/MuseoSansRegular/MuseoSansRegular.ttf') format('truetype'), url('../fonts/MuseoSansRegular/MuseoSansRegular.svg#MuseoSansRegular') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MuseoSansMedium';
+  src: url('../fonts/MuseoSansMedium/MuseoSansMedium.eot');
+  src: url('../fonts/MuseoSansMedium/MuseoSansMedium.eot?#iefix') format('embedded-opentype'), url('../fonts/MuseoSansMedium/MuseoSansMedium.woff') format('woff'), url('../fonts/MuseoSansMedium/MuseoSansMedium.ttf') format('truetype'), url('../fonts/MuseoSansMedium/MuseoSansMedium.svg#MuseoSansMedium') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MuseoSansBold';
+  src: url('../fonts/MuseoSansBold/MuseoSansBold.eot');
+  src: url('../fonts/MuseoSansBold/MuseoSansBold.eot?#iefix') format('embedded-opentype'), url('../fonts/MuseoSansBold/MuseoSansBold.woff') format('woff'), url('../fonts/MuseoSansBold/MuseoSansBold.ttf') format('truetype'), url('../fonts/MuseoSansBold/MuseoSansBold.svg#MuseoSansBold') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MuseoSansBlack';
+  src: url('../fonts/MuseoSansBlack/MuseoSansBlack.eot');
+  src: url('../fonts/MuseoSansBlack/MuseoSansBlack.eot?#iefix') format('embedded-opentype'), url('../fonts/MuseoSansBlack/MuseoSansBlack.woff') format('woff'), url('../fonts/MuseoSansBlack/MuseoSansBlack.ttf') format('truetype'), url('../fonts/MuseoSansBlack/MuseoSansBlack.svg#MuseoSansBlack') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'icons';
+  src: url('../fonts/icons/icons.eot');
+  src: url('../fonts/icons/icons.eot?#iefix') format('embedded-opentype'), url('../fonts/icons/icons.woff') format('woff'), url('../fonts/icons/icons.ttf') format('truetype'), url('../fonts/icons/icons.svg#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

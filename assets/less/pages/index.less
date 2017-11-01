@@ -1,0 +1,92 @@
+/*Carusel*/
+@import "../components/variables";
+
+.carousel
+{
+  position:relative;
+  top:0px;
+ h1
+ {
+  color:@body-bg;
+  font-size:@font-size-h1;
+  text-transform: uppercase;
+   font-family: @font-family-black;
+   font-weight:900;
+   line-height:1;
+     p
+     {
+       font-family: @font-family-black;
+      font-size:2.158em;
+       font-weight:900;
+     }
+ }
+  .carousel-inner
+  {
+  height:366px;
+
+  }
+  .item
+ {
+   position:relative;
+ }
+  .carousel-caption
+  {
+    position:absolute;
+    z-index:400;
+    text-align:center;
+    top:110px;
+  }
+  .carousel-indicators
+  {
+    position:absolute;
+    z-index:800;
+  }
+}
+
+/* Catalog*/
+.hits_catalog
+{
+  background:#f5f5f5;
+}
+
+.product
+  {
+ position:relative;
+ margin-top:15px;
+  padding:22px 10px 10px 10px;
+  background:#FFFFFF;
+  .plaska-news
+  {
+    background:#00aeef;
+    font-size:11px;
+    color:#FFFFFF;
+    position:absolute;
+    padding:3px 5px 3px 5px;
+    top:-5px;
+    left:-9px;
+  }
+ p
+ {
+   padding-top:12px;
+ }
+.pagetitle
+{
+  font-size:ceil((@font-size-base * 0.9375));
+  padding-top:24px;
+  text-align:center;
+  display:block;
+}
+  .rating
+  {
+    color:#ffbf44;
+  }
+  .price
+  {
+    font-size:18px;
+    color:@accent;
+  }
+ .availbal
+ {
+   color:#43b41b;
+ }
+}

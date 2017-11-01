@@ -1,0 +1,99 @@
+/*Основной цвет*/
+/*Цвет плашек*/
+/*Цвет фона*/
+/*Цвет панелей*/
+/*Цвет hover кнопки*/
+/*Базовый шрифт*/
+/*Большой шрифт*/
+/*heading*/
+/*footer*/
+.btn {
+  font-family: 'MuseoSansBold';
+}
+.btn1,
+.btn2 {
+  color: #ffffff;
+  font-size: 12px;
+  font-family: 'MuseoSansBold';
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 8px 20px 8px 20px;
+  border: none;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b959a2+0,7e5fa7+100 */
+  background: #b959a2;
+  /* Old browsers */
+  background: -moz-linear-gradient(45deg, #b959a2 0%, #7e5fa7 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #b959a2 0%, #7e5fa7 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #b959a2 0%, #7e5fa7 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b959a2', endColorstr='#7e5fa7', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+  border-radius: 3px 3px 3px 3px;
+  -modz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  -khtml-border-radius: 3px 3px 3px 3px;
+}
+.btn1:hover {
+  background: #b859a2;
+  color: #FFFFFF;
+  -webkit-box-shadow: -1px 8px 8px 0px rgba(50, 50, 50, 0.19);
+  -moz-box-shadow: -1px 8px 8px 0px rgba(50, 50, 50, 0.19);
+  box-shadow: -1px 8px 8px 0px rgba(50, 50, 50, 0.19);
+}
+.btn2 {
+  padding: 5px 8px 5px 8px;
+}
+input[type="text"] {
+  border: 1px solid #e1e1e1;
+  background: #ffffff !important;
+  outline: none;
+  height: 32px;
+  color: #787878;
+  font-size: 13px;
+  font-weight: 300;
+  font-family: 'MuseoSansRegular';
+  padding-left: 10px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.btn3 {
+  float: left;
+  padding: 6px 7px  6px  7px;
+  border: 1px #b8a7cf solid;
+  margin-left: 2px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.btn4 {
+  display: inline-block;
+  background: #b859a2;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #b859a2 1%, #805ea7 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #b859a2 1%, #805ea7 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #b859a2 1%, #805ea7 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b859a2', endColorstr='#805ea7', GradientType=0);
+  /* IE6-9 */
+  padding: 1px 1px 1px 1px;
+  margin: 14px auto 0px auto;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.btn4 .box {
+  background: #FFFFFF;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 100;
+  padding: 6px 13px 6px 13px;
+  text-transform: uppercase;
+  color: #7e5ea7;
+  font-size: 13px;
+}

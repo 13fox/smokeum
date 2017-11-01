@@ -1,0 +1,185 @@
+/*Основной цвет*/
+/*Цвет плашек*/
+/*Цвет фона*/
+/*Цвет панелей*/
+/*Цвет hover кнопки*/
+/*Базовый шрифт*/
+/*Большой шрифт*/
+/*heading*/
+/*footer*/
+img {
+  max-width: 100%;
+}
+p {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-justify {
+  text-align: justify;
+}
+.text-center {
+  text-align: center;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.ul-unstyled {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.my-flex-row {
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: row;
+}
+h2 {
+  color: #7e5ea7;
+  font-size: 1.875em;
+  font-family: 'MuseoSansBlack';
+  text-transform: uppercase;
+}
+h4 {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-top: 0px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.heading {
+  background: #7e5ea7;
+  text-align: center;
+  margin: 0px 0px 0px 0px;
+}
+.heading a {
+  color: #FFFFFF;
+}
+.tinytext {
+  font-family: 'MuseoSansRegular';
+  font-size: 10px;
+}
+.smalltext {
+  font-family: 'MuseoSansRegular';
+  color: #787878;
+  font-size: 13px;
+  font-weight: 300;
+}
+.mediumtext {
+  font-family: 'MuseoSansRegular';
+  font-weight: 600;
+  font-size: 16px;
+}
+.largetext {
+  font-family: 'MuseoSansBold';
+  font-size: 17px;
+  font-weight: 700;
+}
+section {
+  margin-top: 20px;
+}
+.padding-plaska,
+.heading {
+  padding: 16px 0px 15px 0px;
+  margin: 0px 0px 0px 0px;
+}
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+.clear {
+  clear: both;
+  float: none;
+}
+.heightfix {
+  display: block;
+  height: 420px;
+  clear: both;
+  visibility: hidden;
+}
+/*Clear Css*/
+.null {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+a:link,
+a:active,
+a:visited,
+a:focus {
+  outline: none;
+}
+ol,
+ul {
+  list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+blockquote,
+q {
+  quotes: "" "";
+}
+*:focus {
+  outline: none !important;
+}
+/*remove webkit focus outline */
+input {
+  margin: 0;
+  border: none;
+  cursor: pointer;
+}
+/*remove 2px border across top of input */
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  header > .container > .row > .col-lg-5 {
+    width: 38.4%;
+  }
+  header > .container > .row > .col-lg-3 {
+    width: 21%;
+  }
+  header > .container > .row > .col-lg-2 {
+    width: 20%;
+  }
+}
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  header > .container > .row > .col-lg-5 {
+    width: 38.4%;
+  }
+  header > .container > .row > .col-lg-5 .col-lg-7 {
+    width: 55.33333333%;
+  }
+  header > .container > .row > .col-lg-5 .col-lg-5 {
+    width: 43.66666667%;
+  }
+  header > .container > .row > .col-lg-3 {
+    width: 21%;
+  }
+  header > .container > .row > .col-lg-2 {
+    width: 20%;
+  }
+}

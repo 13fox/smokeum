@@ -1,0 +1,332 @@
+//basic tags and general rules
+@import "variables";
+@import "mixins";
+@import "help-classes";
+
+html, body, #wrapper {
+  height: 100%;
+}
+
+body {
+  font-family: @font-family-base;
+  font-size: @font-size-base;
+  font-weight: @font-weight-base;
+}
+
+a {
+  color: @color;
+  font-size: ceil((@font-size-base * 0.81));
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+ul {
+  margin: 0px 0px 0px 0px;
+  list-style: none;
+  line-height: 1;
+  padding: 0px 0px 0px 0px;
+  height: 100%;
+}
+
+.ul-unstyled {
+  list-style: none;
+}
+
+#wrapper {
+  min-height: 100% !important;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  height: auto !important;
+}
+
+header {
+  /*height: 115px;*/
+  font-family: @font-family-base;
+  .container {
+    /* padding-left:0px;
+     padding-right:0px;
+   */
+  }
+
+  [class^="icon-"]
+  {
+    color:@accent;
+  }
+
+  .logo {
+    top: 20px;
+    position: relative;
+  }
+  .phone {
+    background-image: url('@{img-folder}phone.png');
+    background-position: 40px 0px;
+    background-repeat: no-repeat;
+    padding-left: 32px;
+    line-height: 0.4em;
+    padding-top:10px;
+     div
+     {
+       position:relative;
+       left:50px;
+       top:-5px;
+
+     }
+
+  }
+
+  .phone>div> .smalltext {
+    .smalltext;
+    padding-bottom: 10px;
+    padding-top:16px;
+  }
+  .social {
+    padding-top: 15px;
+    font-size:15px;
+    position:relative;
+    left:10px;
+
+  }
+  .delivery {
+    padding-top:12px;
+  }
+  .private
+  {
+    padding-top:8px;
+  }
+  .social a {
+    color: @accent;
+    padding-right: 18px;
+  }
+  .social a span {
+    color: @accent;
+  }
+  #callback_btn {
+    position: relative;
+    top: 50px;
+    right: 20px;
+  }
+
+
+  /*Search*/
+  #searchform {
+
+  }
+
+  #searchfield {
+    width: 82%;
+    height: 34px;
+  }
+
+  #btnsearch {
+    position: relative;
+    right: 4px;
+    top: 0px;
+    .border-radius(3px);
+  }
+  .cartgroup
+  {
+  position:relative;
+  top:18px;
+  }
+  .cart {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b859a2+1,805ea7+100 */
+    background: rgb(184, 89, 162); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(184, 89, 162, 1) 1%, rgba(128, 94, 167, 1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(184, 89, 162, 1) 1%, rgba(128, 94, 167, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(184, 89, 162, 1) 1%, rgba(128, 94, 167, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b859a2', endColorstr='#805ea7', GradientType=0); /* IE6-9 */
+    padding: 1px 1px 1px 1px;
+    float: left;
+    a {
+      font-size: ceil((@font-size-base * 0.93));
+      text-decoration: none;
+      span {
+        font-size: 17px;
+      }
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    .box {
+      background: #FFFFFF;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      z-index: 100;
+      padding: 6px 12px 6px 12px;
+    }
+    .border-radius(5px);
+  }
+  .site_nav {
+    width: 100%;
+    height: 34px;
+    background: @color;
+    .container {
+      height: 100%;
+      .row {
+        height: 100%;
+        ul {
+          //   &:extend(.ul-unstyled)
+          li {
+            display: inline-block;
+            height: 100%;
+            padding-top: 11px;
+            a {
+              color: #FFFFFF;
+              text-transform: uppercase;
+              font-weight: 500;
+              font-family: @font-family-bold;
+              padding: 12px 35px 8px 35px;
+            }
+            &:first-child a {
+              padding-left: 0px;
+            }
+            &:last-child a {
+              padding-right: 0px;
+            }
+            &:hover {
+
+              background:@color-hover;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/*Vertical menu*/
+.vertical_menu ul li
+{
+background:@color;
+border-bottom:1px solid #FFFFFF;
+cursor:pointer;
+ position:relative;
+  &:hover
+  {
+    background:@color-hover;
+    .submenu
+    {
+      display:block;
+    }
+  }
+   a
+  {
+    color:#FFFFFF;
+    font-size:ceil((@font-size-base * 0.875));
+    &:extend(.padding-plaska);
+    padding-left:44px;
+    display:block;
+  }
+  span:first-child
+  {
+    position:absolute;
+    top:12px;
+    left:18px;
+  }
+
+ span.icon
+ {
+   color:#FFFFFF;
+   font-size:@font-size-base;
+   position:static;
+   float:right;
+   padding-right:9px;
+ }
+
+ .submenu
+ {
+  position:absolute;
+  z-index:300;
+  top:0px;
+  left:100%;
+  width:80%;
+   display:none;
+ }
+
+  &:last-child a
+  {
+    padding-top:14px;
+    padding-bottom:14px;
+  }
+}
+
+
+
+
+
+/*Footer*/
+footer {
+  height: 420px;
+  margin-top:-402px;
+  color: @color-footer;
+  position: relative;
+  font-size: ceil((@font-size-base * 0.75));
+  a {
+    font-size: ceil((@font-size-base * 0.875));
+    color: @color-footer;
+    font-family: @font-family-medium;
+    font-weight: @font-weight-medium;
+    &:hover {
+      color: #FFFFFF;
+    }
+  }
+  h4 {
+    color: #FFFFFF;
+    font-size: ceil((@font-size-base * 0.93));
+    text-transform: uppercase;
+    margin-top: 0px;
+  }
+  h4.mediumtext
+  {
+   font-size:@font-size-base;
+  }
+  .footer_up {
+    width: 100%;
+    height: 334px;
+    padding-top: 52px;
+    .bg-img('footer_bg.jpg');
+    -ms-behavior: url(/assets/ie8-support/backgroundsize.min.htc);
+    nav > ul > li {
+      font-size: ceil((@font-size-base * 0.875));
+      line-height: 170%;
+    }
+    p
+    {
+      padding-top:22px;
+    }
+    p.mediumtext
+    {
+      padding-top:22px;
+      font-size: @font-size-base;
+      color: @color-footer;
+      text-indent: 0px;
+      line-height:1.2;
+    }
+
+  }
+
+  .footer_down
+  {
+    height: 86px;
+    background: @footer-bg;
+    .social_footer
+    {
+      float:right;
+    }
+    .social_footer a
+    {
+      color:#FFFFFF;
+      font-size: ceil((@font-size-base * 0.93));
+      padding:8px 10px 8px 10px;
+      margin-top:24px;
+      border:2px solid #FFFFFF;
+      border-radius:50%;
+      float:left;
+      margin-left:10px;
+    }
+  }
+
+}
+

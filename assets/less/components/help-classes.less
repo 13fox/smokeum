@@ -1,0 +1,214 @@
+//text align
+@import "variables";
+img
+{
+  max-width:100%;
+}
+p {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+//list
+.ul-unstyled {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.my-flex-row
+{
+display:flex;
+  flex-flow: wrap;
+  flex-direction: row;
+}
+
+h2
+{
+color:@accent;
+  font-size:@font-size-h1;
+  font-family:@font-family-black;
+  text-transform: uppercase;
+}
+
+
+
+h4 {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-top: 0px;
+  font-size: ceil((@font-size-base * 0.8125));
+  font-weight:@font-weight-base;
+
+}
+.heading
+{
+background:@accent;
+text-align:center;
+  &:extend(.padding-plaska);
+  margin:0px 0px 0px 0px;
+  a
+  {
+  color:#FFFFFF;
+  }
+}
+.tinytext
+{
+  font-family: @font-family-base;
+  font-size: ceil((@font-size-base * 0.625));
+
+}
+.smalltext {
+  font-family: @font-family-base;
+  color: #787878;
+  font-size: ceil((@font-size-base * 0.81));
+  font-weight:@font-weight-base/2
+}
+.mediumtext
+{
+  font-family: @font-family-base;
+  font-weight:@font-weight-base;
+  font-size:@font-size-base;
+}
+.largetext {
+  font-family: @font-family-bold;
+  font-size: @font-size-base+1;
+  font-weight: 700;
+}
+//section
+section
+{
+  margin-top:20px;
+}
+
+.padding-plaska
+{
+  padding:16px 0px 15px 0px;
+  margin:0px 0px 0px 0px;
+}
+
+//rows
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.clear {
+  clear: both;
+  float: none;
+}
+
+.heightfix {
+  display: block;
+  height: 420px;
+  clear: both;
+  visibility: hidden;
+}
+
+/*Clear Css*/
+.null {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+a:link, a:active, a:visited, a:focus {
+  outline: none;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+}
+
+blockquote, q {
+  quotes: "" "";
+}
+
+*:focus {
+  outline: none !important;
+}
+
+/*remove webkit focus outline */
+input {
+  margin: 0;
+  border: none;
+  cursor: pointer;
+}
+
+/*remove 2px border across top of input */
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  header > .container > .row > .col-lg-5 {
+    width: 38.4%;
+  }
+
+  header > .container > .row > .col-lg-3 {
+    width: 21%;
+  }
+
+  header > .container > .row > .col-lg-2 {
+    width: 20%;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  header > .container > .row > .col-lg-5 {
+    width: 38.4%;
+    .col-lg-7 {
+      width: 55.33333333%;
+    }
+    .col-lg-5 {
+      width: 43.66666667%;
+    }
+  }
+
+  header > .container > .row > .col-lg-3 {
+    width: 21%;
+  }
+
+  header > .container > .row > .col-lg-2 {
+    width: 20%;
+  }
+}
