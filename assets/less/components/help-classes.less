@@ -41,7 +41,14 @@ display:flex;
   flex-flow: wrap;
   flex-direction: row;
 }
-
+h1 {
+  color: @body-bg;
+  font-size: @font-size-h1;
+  text-transform: uppercase;
+  font-family: @font-family-black;
+  font-weight: 900;
+  line-height: 1;
+}
 h2
 {
 color:@accent;
@@ -81,12 +88,18 @@ text-align:center;
   font-family: @font-family-base;
   color: #787878;
   font-size: ceil((@font-size-base * 0.81));
-  font-weight:@font-weight-base/2
+  font-weight: @font-weight-base/2;
+}
+.text
+{
+  font-family: @font-family-base;
+  font-weight:@font-weight-tiny;
+  font-size:@font-size-base;
 }
 .mediumtext
 {
   font-family: @font-family-base;
-  font-weight:@font-weight-base;
+  font-weight:700;
   font-size:@font-size-base;
 }
 .largetext {

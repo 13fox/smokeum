@@ -81,10 +81,11 @@ input[type="text"] {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b859a2', endColorstr='#805ea7', GradientType=0);
   /* IE6-9 */
   padding: 1px 1px 1px 1px;
-  margin: 14px auto 0px auto;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+  width: 100 px;
+  height: 25 px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
 }
 .btn4 .box {
   background: #FFFFFF;
@@ -92,7 +93,7 @@ input[type="text"] {
   height: 100%;
   position: relative;
   z-index: 100;
-  padding: 6px 13px 6px 13px;
+  padding: 5px 13px 5px 13px;
   text-transform: uppercase;
   color: #7e5ea7;
   font-size: 13px;

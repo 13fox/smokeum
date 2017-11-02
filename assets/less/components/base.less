@@ -11,6 +11,7 @@ body {
   font-family: @font-family-base;
   font-size: @font-size-base;
   font-weight: @font-weight-base;
+  background:transparent;
 }
 
 a {
@@ -39,6 +40,7 @@ ul {
   width: 100%;
   height: 100%;
   height: auto !important;
+  background:transparent;
 }
 
 header {
@@ -176,8 +178,8 @@ header {
             a {
               color: #FFFFFF;
               text-transform: uppercase;
-              font-weight: 500;
-              font-family: @font-family-bold;
+              font-weight: 700;
+              font-family: @font-family-base;
               padding: 12px 35px 8px 35px;
             }
             &:first-child a {
@@ -218,6 +220,14 @@ cursor:pointer;
     &:extend(.padding-plaska);
     padding-left:44px;
     display:block;
+    [class^="icon-"]
+     {
+       color:#FFFFFF;
+       font-size:@font-size-base;
+       position:static !important;
+       float:right;
+       padding-right:9px;
+     }
   }
   span:first-child
   {
@@ -226,14 +236,8 @@ cursor:pointer;
     left:18px;
   }
 
- span.icon
- {
-   color:#FFFFFF;
-   font-size:@font-size-base;
-   position:static;
-   float:right;
-   padding-right:9px;
- }
+
+
 
  .submenu
  {
@@ -263,6 +267,16 @@ footer {
   color: @color-footer;
   position: relative;
   font-size: ceil((@font-size-base * 0.75));
+  p.smalltext
+  {
+    font-size:12px;
+    color:@color-footer;
+  }
+  [class^="icon-"]
+  {
+    color:#FFFFFF;
+    font-size:floor((@font-size-base * 1.125));
+  }
   a {
     font-size: ceil((@font-size-base * 0.875));
     color: @color-footer;
@@ -271,13 +285,20 @@ footer {
     &:hover {
       color: #FFFFFF;
     }
+   p
+   {
+    color:#b8a7cf;
+   }
+
+    h4 {
+      color: #FFFFFF;
+      font-size: ceil((@font-size-base * 0.93));
+      text-transform: uppercase;
+      margin-top: 0px;
+      padding-bottom:30px;
+    }
   }
-  h4 {
-    color: #FFFFFF;
-    font-size: ceil((@font-size-base * 0.93));
-    text-transform: uppercase;
-    margin-top: 0px;
-  }
+
   h4.mediumtext
   {
    font-size:@font-size-base;
@@ -296,13 +317,37 @@ footer {
     {
       padding-top:22px;
     }
-    p.mediumtext
+    p.text
     {
       padding-top:22px;
       font-size: @font-size-base;
       color: @color-footer;
       text-indent: 0px;
       line-height:1.2;
+      a
+      {
+        padding-left:10px;
+        padding-top:22px;
+      }
+      span
+      {
+        display:inline-block;
+        float:left;
+
+        &:nth-child(2)
+        {
+         width:90%;
+          padding-left:10px;
+          a
+          {
+            text-decoration: underline;
+            font-size:15px;
+            padding-left:0px;
+          }
+
+        }
+      }
+
     }
 
   }
@@ -311,6 +356,11 @@ footer {
   {
     height: 86px;
     background: @footer-bg;
+    color:#dacde0;
+    p
+    {
+      padding-top:10px;
+    }
     .social_footer
     {
       float:right;

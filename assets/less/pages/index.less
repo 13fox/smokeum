@@ -1,92 +1,161 @@
 /*Carusel*/
 @import "../components/variables";
+@import "../components/mixins";
 
-.carousel
-{
-  position:relative;
-  top:0px;
- h1
- {
-  color:@body-bg;
-  font-size:@font-size-h1;
-  text-transform: uppercase;
-   font-family: @font-family-black;
-   font-weight:900;
-   line-height:1;
-     p
-     {
-       font-family: @font-family-black;
-      font-size:2.158em;
-       font-weight:900;
-     }
- }
-  .carousel-inner
-  {
-  height:366px;
+.carousel {
+  position: relative;
+  top: 0px;
+  h1 {
+    color: @body-bg;
+    font-size: @font-size-h1;
+    text-transform: uppercase;
+    font-family: @font-family-black;
+    font-weight: 900;
+    line-height: 1;
+    p {
+      font-family: @font-family-black;
+      font-size: 2.158em;
+      font-weight: 900;
+    }
+  }
+  .carousel-inner {
+    height: 366px;
 
   }
-  .item
- {
-   position:relative;
- }
-  .carousel-caption
-  {
-    position:absolute;
-    z-index:400;
-    text-align:center;
-    top:110px;
+  .item {
+    position: relative;
   }
-  .carousel-indicators
-  {
-    position:absolute;
-    z-index:800;
+  .carousel-caption {
+    position: absolute;
+    z-index: 400;
+    text-align: center;
+    top: 110px;
+  }
+  .carousel-indicators {
+    position: absolute;
+    z-index: 800;
   }
 }
 
 /* Catalog*/
-.hits_catalog
-{
-  background:#f5f5f5;
+.catalog {
+  background: #f5f5f5;
 }
 
-.product
-  {
- position:relative;
- margin-top:15px;
-  padding:22px 10px 10px 10px;
-  background:#FFFFFF;
-  .plaska-news
-  {
-    background:#00aeef;
-    font-size:11px;
-    color:#FFFFFF;
+.product {
+  position: relative;
+  margin-top: 15px;
+  padding: 22px 10px 10px 10px;
+  background: #FFFFFF;
+  .plaska-news {
+    background: #00aeef;
+    font-size: 11px;
+    color: #FFFFFF;
+    position: absolute;
+    padding: 1px 5px 1px 5px;
+    top: -5px;
+    left: -9px;
+  }
+  p {
+    padding-top: 12px;
+  }
+  .pagetitle {
+    font-size: ceil((@font-size-base * 0.9375));
+    padding-top: 18px;
+    text-align: center;
+    display: block;
+  }
+  .rating {
+    color: #ffbf44;
+    margin-top: 12px;
+    text-align: center;
+    a.tinytext {
+      font-size: 11px;
+    }
+  }
+  .price {
+    font-size: 18px;
+    color: @accent;
+    font-family: Arial;
+    font-size: ceil((@font-size-base * 1.125));
+    font-weight: normal;
+  }
+  .availbal {
+    color: #43b41b;
+    font-size: 11px;
+    padding-top: 15px;
+  }
+}
+
+/*Parallax*/
+
+.parallax-window {
+  min-height: 500px;
+  background: transparent;
+
+  [class^="sprite3-"] {
+    position: relative;
+
+  }
+
+  h1 {
+    font-size: 2.250em;
+    padding-top: 58px;
+    margin-bottom:40px;
+  }
+  .gradient {
+    background-color: rgb(157, 76, 138); /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(157, 76, 138, 1) 0%, rgba(116, 86, 152, 1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(157, 76, 138, 1) 0%, rgba(116, 86, 152, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(157, 76, 138, 1) 0%, rgba(116, 86, 152, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9d4c8a', endColorstr='#745698', GradientType=1); /* IE6-9 */
     position:absolute;
-    padding:3px 5px 3px 5px;
-    top:-5px;
-    left:-9px;
+    width:100%;
+    height:100%;
+    .opacity(0.6);
+    top:0px;
+    left:0px;
   }
- p
- {
-   padding-top:12px;
- }
-.pagetitle
-{
-  font-size:ceil((@font-size-base * 0.9375));
-  padding-top:24px;
-  text-align:center;
-  display:block;
-}
-  .rating
+
+ .offers {
+background-repeat: no-repeat, no-repeat;
+background-position:center 28px,right 5px;
+   margin-bottom:18px;
+   height:143px;
+   .slogan
+   {
+    color:#FFFFFF;
+     text-align:center;
+     font-size:ceil((@font-size-base*1.25));
+     padding-top:84px;
+   }
+  }
+  .delivery
   {
-    color:#ffbf44;
+    background-image:url('@{img-folder}car.png'), url('@{img-folder}car_big.png');
   }
-  .price
+  .kolian
   {
-    font-size:18px;
-    color:@accent;
+    background-image:url('@{img-folder}kalian.png'), url('@{img-folder}kalian_big.png');
   }
- .availbal
- {
-   color:#43b41b;
- }
+  .discount
+  {
+    background-image:url('@{img-folder}discount.png'), url('@{img-folder}discount_big.png');
+  }
+  .garanty
+  {
+    background-image:url('@{img-folder}garanty.png'), url('@{img-folder}garanty_big.png');
+  }
+  .tabako
+  {
+    background-image:url('@{img-folder}tabako.png'), url('@{img-folder}tabako_big.png');
+  }
+  .gifs
+   {
+     background-image:url('@{img-folder}gifs.png'), url('@{img-folder}gifs_big.png');
+   }
 }
+
+
+
+

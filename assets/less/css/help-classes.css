@@ -39,6 +39,14 @@ p {
   flex-flow: wrap;
   flex-direction: row;
 }
+h1 {
+  color: #FFFFFF;
+  font-size: 1.875em;
+  text-transform: uppercase;
+  font-family: 'MuseoSansBlack';
+  font-weight: 900;
+  line-height: 1;
+}
 h2 {
   color: #7e5ea7;
   font-size: 1.875em;
@@ -70,9 +78,14 @@ h4 {
   font-size: 13px;
   font-weight: 300;
 }
+.text {
+  font-family: 'MuseoSansRegular';
+  font-weight: 300;
+  font-size: 16px;
+}
 .mediumtext {
   font-family: 'MuseoSansRegular';
-  font-weight: 600;
+  font-weight: 700;
   font-size: 16px;
 }
 .largetext {
