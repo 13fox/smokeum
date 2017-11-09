@@ -26,7 +26,7 @@
   font-weight: 900;
 }
 .carousel .carousel-inner {
-  height: 366px;
+  /* height: 366px;*/
 }
 .carousel .item {
   position: relative;
@@ -227,12 +227,12 @@
   padding-right: 5px;
 }
 .sec4 h3 {
-  height: 52px;
   color: #FFFFFF;
   font-size: 1.250em;
   font-weight: 600;
-  padding: 16px 0px 0px 20px;
+  padding: 16px 0px 16px 20px;
   border: none;
+  margin-top: 0px;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b859a2+0,7e5ea6+100 */
   background: #b859a2;
   /* Old browsers */
@@ -248,6 +248,13 @@
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
+.sec4 .ui-accordion-content {
+  background-image: url('../img/accardion_bg.png');
+  background-size: cover;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
 .sec4 p {
   font-size: 16px;
   color: #252525;
@@ -257,4 +264,19 @@
   color: #FFFFFF;
   position: absolute;
   right: 17px;
+}
+@media (max-width: 640px) {
+  .carousel {
+    margin-top: 17px;
+  }
+  .carousel .carousel-caption {
+    top: 25px;
+  }
+  .sec3 {
+    background-image: url('../img/parallax.jpg');
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
 }

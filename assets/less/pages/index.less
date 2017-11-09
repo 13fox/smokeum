@@ -19,7 +19,7 @@
     }
   }
   .carousel-inner {
-    height: 366px;
+   /* height: 366px;*/
 
   }
   .item {
@@ -184,12 +184,12 @@
 {
  h3
  {
-   height:52px;
    color:#FFFFFF;
    font-size:1.250em;
    font-weight:@font-weight-base;
-   padding:16px 0px 0px 20px;
+   padding:16px 0px 16px 20px;
    border:none;
+   margin-top:0px;
    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b859a2+0,7e5ea6+100 */
    background: rgb(184,89,162); /* Old browsers */
    background: -moz-linear-gradient(left, rgba(184,89,162,1) 0%, rgba(126,94,166,1) 100%); /* FF3.6-15 */
@@ -197,8 +197,12 @@
    background: linear-gradient(to right, rgba(184,89,162,1) 0%,rgba(126,94,166,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b859a2', endColorstr='#7e5ea6',GradientType=1 ); /* IE6-9 */
   .border-radius(3px);
- }
 
+ }
+  .ui-accordion-content
+  {
+    .bg-img("accardion_bg.png",right bottom);
+  }
   p
   {
   font-size:@font-size-base;
@@ -215,3 +219,28 @@
 }
 
 
+@media (max-width: 640px)
+
+{
+  .carousel
+  {
+    margin-top:17px;
+
+    .carousel-caption
+    {
+      top:25px;
+    }
+
+  }
+  .sec3
+  {
+    .bg-img('parallax.jpg');
+
+  }
+
+
+
+
+
+
+}

@@ -7,7 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Title</title>
     <link rel="stylesheet" href="assets/css/owl.carousel.css"/>
-    <link rel="stylesheet" href="assets/css/ owl.theme.default.min.css"/>
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css"/>
 
     <!-- Import main styles -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -56,6 +56,8 @@
                     </button>
                 </div>
                 <div class="col-md-3 col-md-push-1 search_block col-xs-12">
+                    <a href="/" id="navbtn" class="icon-menu">
+                    </a>
                     <form id="searchform" action="" method="get"/>
                     <input id="searchfield" class="" type="text" placeholder="Поиск по сайту"/>
                     <button id="btnsearch" class="btn btn2"><span class="sprite1-search"></span></button>
@@ -163,7 +165,7 @@
             <div class="row">
                 <div class="col-md-3">
                     <asidae>
-
+                        <h4 class="heading">Социальные сети</h4>
                     </asidae>
                 </div>
                 <div class="col-md-9">
@@ -589,7 +591,7 @@
                         советских времен.
                     </p>
                 </div>
-                <div class="col-md-2 col-md-offset-1">
+                <div class="col-md-2 col-md-offset-1 col-xs-12">
                     <h4>Интернет-магазин</h4>
                     <nav>
                         <ul>
@@ -604,7 +606,7 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3  col-xs-12">
                     <h4>Каталог товаров</h4>
                     <nav>
                         <ul>
@@ -618,7 +620,7 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-xs-12">
                     <h4 class="mediumtext"><span class="icon-phone"></span> <span>+7 (987) 012 34 56</span></h4>
 
                     <p class="text"><span class="icon-map-marker"></span><span>Название улицы, д.10, оф.100
@@ -644,7 +646,7 @@
 
                     <p class="tinytext copy">&copy; 2017. Все права защищены</p>
                 </div>
-                <div class="col-md-3 social_footer text-right">
+                <div class="col-md-3 social_footer col-xs-12 ">
                     <a href=""><span class="icon-vk2"></span></a>
                     <a href=""><span class="icon-instagram"></span></a>
                     <a href=""><span class="icon-facebook"></span></a>
@@ -683,8 +685,23 @@
         $('.ui-accordion-header-icon').addClass('icon-chevron-down');
         $(".owl-carousel").owlCarousel({
             loop:true,
-            items:4,
-            nav:true
+            navigation: true,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:2,
+                    nav:true
+                },
+                600:{
+                    items:2,
+                    navigation:true
+                },
+                1000:{
+                    items:4,
+                    nav:true,
+                    loop:false
+                }
+            }
         });
     });
 </script>
