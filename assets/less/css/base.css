@@ -197,6 +197,57 @@ input {
     width: 20%;
   }
 }
+.col-lg-1,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-md-1,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-xs-1,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
 html,
 body,
 #wrapper {
@@ -295,6 +346,11 @@ header #callback_btn {
   top: 50px;
   right: 20px;
 }
+header .search_block {
+  position: relative;
+  left: 15%;
+  top: -2px;
+}
 header #searchfield {
   width: 82%;
   height: 34px;
@@ -307,11 +363,14 @@ header #btnsearch {
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
-header .cartgroup {
+header .cart_block {
   position: relative;
-  top: 18px;
+  right: 0px;
+  padding-left: 65px;
 }
 header .cart {
+  float: left;
+  padding: 1px 1px 1px 1px;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b859a2+1,805ea7+100 */
   background: #b859a2;
   /* Old browsers */
@@ -323,8 +382,7 @@ header .cart {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b859a2', endColorstr='#805ea7', GradientType=0);
   /* IE6-9 */
-  padding: 1px 1px 1px 1px;
-  float: left;
+  height: 33px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -522,4 +580,71 @@ footer .footer_down .social_footer a {
   border-radius: 50%;
   float: left;
   margin-left: 10px;
+}
+@media (max-width: 640px) {
+  header .logo {
+    order: 1;
+    text-align: center;
+    position: static;
+    margin-bottom: 10px;
+    border-top: 1px solid #7e5ea7;
+    padding-top: 10px;
+  }
+  header .logo:after {
+    clear: both;
+  }
+  header .social {
+    order: 0;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  header .private {
+    order: 0;
+  }
+  header .delivery {
+    display: none;
+  }
+  header .phone {
+    order: 2;
+    top: 0px;
+    left: 0px;
+    background: none;
+    position: static;
+    margin-bottom: 10px;
+    padding-left: 10px !important;
+  }
+  header .phone .smalltext {
+    display: none;
+  }
+  header .phone div {
+    position: static;
+    top: 0px;
+    left: 0px;
+    padding-left: 0px;
+  }
+  header .phone p {
+    display: inline-block;
+  }
+  header .callback_block {
+    order: 2;
+    position: static;
+  }
+  header .cart_block {
+    order: 3;
+    margin-top: 10px;
+  }
+  header .search_block {
+    order: 4;
+    margin-top: 10px;
+    width: 100%;
+    position: static;
+    background: #252525;
+  }
+  header .site_nav {
+    display: none;
+  }
+  .vertical_menu_cont {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
 }

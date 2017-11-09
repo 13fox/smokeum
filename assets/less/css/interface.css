@@ -17,7 +17,7 @@
   font-family: 'MuseoSansBold';
   font-weight: 500;
   text-transform: uppercase;
-  padding: 8px 20px 8px 20px;
+  padding: 8px 10px 8px 10px;
   border: none;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b959a2+0,7e5fa7+100 */
   background: #b959a2;
@@ -67,6 +67,10 @@ input[type="text"] {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
+}
+.btn3:hover {
+  background: #7e5ea7;
+  color: #FFFFFF;
 }
 .btn4 {
   display: inline-block;

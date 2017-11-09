@@ -203,6 +203,57 @@ input {
     width: 20%;
   }
 }
+.col-lg-1,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-md-1,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-xs-1,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
 @font-face {
   font-family: 'MuseoSansRegular';
   src: url('../fonts/MuseoSansRegular/MuseoSansRegular.eot');
@@ -455,7 +506,7 @@ input {
   font-family: 'MuseoSansBold';
   font-weight: 500;
   text-transform: uppercase;
-  padding: 8px 20px 8px 20px;
+  padding: 8px 10px 8px 10px;
   border: none;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b959a2+0,7e5fa7+100 */
   background: #b959a2;
@@ -505,6 +556,10 @@ input[type="text"] {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
+}
+.btn3:hover {
+  background: #7e5ea7;
+  color: #FFFFFF;
 }
 .btn4 {
   display: inline-block;
@@ -634,6 +689,11 @@ header #callback_btn {
   top: 50px;
   right: 20px;
 }
+header .search_block {
+  position: relative;
+  left: 15%;
+  top: -2px;
+}
 header #searchfield {
   width: 82%;
   height: 34px;
@@ -646,11 +706,14 @@ header #btnsearch {
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
-header .cartgroup {
+header .cart_block {
   position: relative;
-  top: 18px;
+  right: 0px;
+  padding-left: 65px;
 }
 header .cart {
+  float: left;
+  padding: 1px 1px 1px 1px;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b859a2+1,805ea7+100 */
   background: #b859a2;
   /* Old browsers */
@@ -662,8 +725,7 @@ header .cart {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b859a2', endColorstr='#805ea7', GradientType=0);
   /* IE6-9 */
-  padding: 1px 1px 1px 1px;
-  float: left;
+  height: 33px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -862,6 +924,73 @@ footer .footer_down .social_footer a {
   float: left;
   margin-left: 10px;
 }
+@media (max-width: 640px) {
+  header .logo {
+    order: 1;
+    text-align: center;
+    position: static;
+    margin-bottom: 10px;
+    border-top: 1px solid #7e5ea7;
+    padding-top: 10px;
+  }
+  header .logo:after {
+    clear: both;
+  }
+  header .social {
+    order: 0;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  header .private {
+    order: 0;
+  }
+  header .delivery {
+    display: none;
+  }
+  header .phone {
+    order: 2;
+    top: 0px;
+    left: 0px;
+    background: none;
+    position: static;
+    margin-bottom: 10px;
+    padding-left: 10px !important;
+  }
+  header .phone .smalltext {
+    display: none;
+  }
+  header .phone div {
+    position: static;
+    top: 0px;
+    left: 0px;
+    padding-left: 0px;
+  }
+  header .phone p {
+    display: inline-block;
+  }
+  header .callback_block {
+    order: 2;
+    position: static;
+  }
+  header .cart_block {
+    order: 3;
+    margin-top: 10px;
+  }
+  header .search_block {
+    order: 4;
+    margin-top: 10px;
+    width: 100%;
+    position: static;
+    background: #252525;
+  }
+  header .site_nav {
+    display: none;
+  }
+  .vertical_menu_cont {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
 /*Carusel*/
 .carousel {
   position: relative;
@@ -899,6 +1028,9 @@ footer .footer_down .social_footer a {
 /* Catalog*/
 .catalog {
   background: #f5f5f5;
+}
+.owl-item {
+  float: left;
 }
 .product {
   position: relative;
@@ -946,17 +1078,26 @@ footer .footer_down .social_footer a {
 /*Parallax*/
 .parallax-window {
   min-height: 500px;
-  background: transparent;
+  width: 100%;
 }
-.parallax-window [class^="sprite3-"] {
+.sec3 {
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+}
+.sec3 [class^="sprite3-"] {
   position: relative;
 }
-.parallax-window h1 {
+.sec3 .container {
+  margin-top: -500px;
+  margin-bottom: 20px;
+}
+.sec3 h1 {
   font-size: 2.250em;
   padding-top: 58px;
   margin-bottom: 40px;
 }
-.parallax-window .gradient {
+.sec3 .gradient {
   background-color: #9d4c8a;
   /* Old browsers */
   background: -moz-linear-gradient(left, #9d4c8a 0%, #745698 100%);
@@ -976,33 +1117,128 @@ footer .footer_down .social_footer a {
   top: 0px;
   left: 0px;
 }
-.parallax-window .offers {
+.sec3 .offers {
   background-repeat: no-repeat, no-repeat;
-  background-position: center 28px,right 5px;
+  background-position: center 28px, right 5px;
   margin-bottom: 18px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-left: -5px;
+  padding-right: -5px;
   height: 143px;
+  position: relative;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
 }
-.parallax-window .offers .slogan {
+.sec3 .offers .slogan {
   color: #FFFFFF;
   text-align: center;
   font-size: 20px;
   padding-top: 84px;
+  line-height: 0.8;
 }
-.parallax-window .delivery {
+.sec3 .offers .slogan span {
+  font-size: 14px;
+}
+.sec3 .delivery {
   background-image: url('../img/car.png'), url('../img/car_big.png');
 }
-.parallax-window .kolian {
+.sec3 .kolian {
   background-image: url('../img/kalian.png'), url('../img/kalian_big.png');
 }
-.parallax-window .discount {
+.sec3 .discount {
   background-image: url('../img/discount.png'), url('../img/discount_big.png');
 }
-.parallax-window .garanty {
+.sec3 .garanty {
   background-image: url('../img/garanty.png'), url('../img/garanty_big.png');
 }
-.parallax-window .tabako {
+.sec3 .tabako {
   background-image: url('../img/tabako.png'), url('../img/tabako_big.png');
 }
-.parallax-window .gifs {
+.sec3 .gifs {
   background-image: url('../img/gifs.png'), url('../img/gifs_big.png');
+}
+.sec3 .col-lg-1,
+.sec3 .col-lg-10,
+.sec3 .col-lg-11,
+.sec3 .col-lg-12,
+.sec3 .col-lg-2,
+.sec3 .col-lg-3,
+.sec3 .col-lg-4,
+.sec3 .col-lg-5,
+.sec3 .col-lg-6,
+.sec3 .col-lg-7,
+.sec3 .col-lg-8,
+.sec3 .col-lg-9,
+.sec3 .col-md-1,
+.sec3 .col-md-10,
+.sec3 .col-md-11,
+.sec3 .col-md-12,
+.sec3 .col-md-2,
+.sec3 .col-md-3,
+.sec3 .col-md-4,
+.sec3 .col-md-5,
+.sec3 .col-md-6,
+.sec3 .col-md-7,
+.sec3 .col-md-8,
+.sec3 .col-md-9,
+.sec3 .col-sm-1,
+.sec3 .col-sm-10,
+.sec3 .col-sm-11,
+.sec3 .col-sm-12,
+.sec3 .col-sm-2,
+.sec3 .col-sm-3,
+.sec3 .col-sm-4,
+.sec3 .col-sm-5,
+.sec3 .col-sm-6,
+.sec3 .col-sm-7,
+.sec3 .col-sm-8,
+.sec3 .col-sm-9,
+.sec3 .col-xs-1,
+.sec3 .col-xs-10,
+.sec3 .col-xs-11,
+.sec3 .col-xs-12,
+.sec3 .col-xs-2,
+.sec3 .col-xs-3,
+.sec3 .col-xs-4,
+.sec3 .col-xs-5,
+.sec3 .col-xs-6,
+.sec3 .col-xs-7,
+.sec3 .col-xs-8,
+.sec3 .col-xs-9 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.sec4 h3 {
+  height: 52px;
+  color: #FFFFFF;
+  font-size: 1.250em;
+  font-weight: 600;
+  padding: 16px 0px 0px 20px;
+  border: none;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b859a2+0,7e5ea6+100 */
+  background: #b859a2;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #b859a2 0%, #7e5ea6 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #b859a2 0%, #7e5ea6 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #b859a2 0%, #7e5ea6 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b859a2', endColorstr='#7e5ea6', GradientType=1);
+  /* IE6-9 */
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.sec4 p {
+  font-size: 16px;
+  color: #252525;
+  font-weight: 300;
+}
+.sec4 .ui-accordion-header-icon {
+  color: #FFFFFF;
+  position: absolute;
+  right: 17px;
 }

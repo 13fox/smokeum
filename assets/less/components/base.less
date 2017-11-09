@@ -109,7 +109,13 @@ header {
     top: 50px;
     right: 20px;
   }
+ .search_block
+ {
+ position:relative;
+left:15%;
+  top:-2px;
 
+ }
 
   /*Search*/
   #searchform {
@@ -127,20 +133,25 @@ header {
     top: 0px;
     .border-radius(3px);
   }
-  .cartgroup
+  .cart_block
   {
-  position:relative;
-  top:18px;
+    position:relative;
+    right:0px;
+    padding-left:65px;
   }
+
+
   .cart {
+   float:left;
+   padding: 1px 1px 1px 1px;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b859a2+1,805ea7+100 */
     background: rgb(184, 89, 162); /* Old browsers */
     background: -moz-linear-gradient(top, rgba(184, 89, 162, 1) 1%, rgba(128, 94, 167, 1) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, rgba(184, 89, 162, 1) 1%, rgba(128, 94, 167, 1) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, rgba(184, 89, 162, 1) 1%, rgba(128, 94, 167, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b859a2', endColorstr='#805ea7', GradientType=0); /* IE6-9 */
-    padding: 1px 1px 1px 1px;
-    float: left;
+    height:33px;
+
     a {
       font-size: ceil((@font-size-base * 0.93));
       text-decoration: none;
@@ -376,6 +387,97 @@ footer {
       float:left;
       margin-left:10px;
     }
+  }
+
+}
+
+@media (max-width: 640px) {
+
+  header
+  {
+      .logo
+     {
+    order: 1;
+     text-align:center;
+      position:static;
+      margin-bottom:10px;
+      border-top:1px solid #7e5ea7;
+      padding-top:10px;
+     &:after
+     {
+       clear:both;
+     }
+
+    }
+    .social
+    {
+      order:0;
+      margin-left:0px;
+      margin-right:0px;
+    }
+    .private
+    {
+      order:0;
+    }
+    .delivery
+    {
+      display:none;
+    }
+    .phone
+    {
+      order:2;
+      top:0px;
+      left:0px;
+      background:none;
+      position:static;
+      margin-bottom:10px;
+      padding-left:10px !important;
+      .smalltext
+      {
+        display:none;
+      }
+      div
+      {
+        position:static;
+        top:0px;
+        left:0px;
+        padding-left:0px;
+      }
+      p
+      {
+        display:inline-block;
+      }
+
+    }
+    .callback_block
+    {
+      order:2;
+      position:static;
+    }
+    .cart_block
+    {
+      order:3;
+      margin-top:10px;
+    }
+    .search_block
+    {
+      order:4;
+      margin-top:10px;
+      width:100%;
+      position:static;
+      background:@color;
+    }
+ .site_nav
+ {
+   display:none;
+ }
+  }
+
+  .vertical_menu_cont
+  {
+
+  padding-left:2%;
+    padding-right:2%;
   }
 
 }

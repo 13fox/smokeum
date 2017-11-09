@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Title</title>
+    <link rel="stylesheet" href="assets/css/owl.carousel.css"/>
+    <link rel="stylesheet" href="assets/css/ owl.theme.default.min.css"/>
+
     <!-- Import main styles -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -23,12 +26,12 @@
     <header>
         <div class="container">
             <div class="row my-flex-row">
-                <div class="col-md-2 logo">
+                <div class="col-md-2 logo col-xs-12">
                     <a href="/">
                         <img src="assets/img/logo.png" title="" alt=""/>
                     </a>
                 </div>
-                <div class="col-md-2 social center-block text-center">
+                <div class="col-md-2 social center-block text-center col-xs-6">
                     <a href=""><span class="icon-vk2"></span></a>
                     <a href=""><span class="icon-instagram"></span></a>
                     <a href=""><span class="icon-facebook"></span></a>
@@ -37,28 +40,28 @@
                 <div class="col-md-3 col-lg-offset-2 delivery">
                     <p class="smalltext"><span class="icon-truck"></span>&nbsp;Бесплатная доставка от 1500 &#8381;</p>
                 </div>
-                <div class="col-md-2 col-lg-offset-1 private">
+                <div class="col-md-2 col-lg-offset-1 private col-xs-6">
                     <span class="icon-user-circle"></span> <a href="/">Вход</a> / <a href="/">Регистрация</a>
                 </div>
-                <div class="col-md-3 col-md-push-2 phone">
+                <div class="col-md-3 col-md-push-2 col-xs-6 phone">
                     <div>
                         <p>+7 (987) 012 34 56</p>
 
                         <p class="smalltext">Работаем с 11 до 21. Звоните!</p>
                     </div>
                 </div>
-                <div class="col-md-2  col-md-push-2">
+                <div class="col-md-2  col-md-push-2 col-xs-6 callback_block ">
                     <button class="btn btn1" data-toggle="modal" data-target="#callbackModal">
                         Обратный звонок
                     </button>
                 </div>
-                <div class="col-md-3 col-md-push-1">
+                <div class="col-md-3 col-md-push-1 search_block col-xs-12">
                     <form id="searchform" action="" method="get"/>
                     <input id="searchfield" class="" type="text" placeholder="Поиск по сайту"/>
                     <button id="btnsearch" class="btn btn2"><span class="sprite1-search"></span></button>
                     </form>
                 </div>
-                <div class="col-md-3  col-md-push-1">
+                <div class="col-md-3  col-md-push-1 cart_block col-xs-12">
                     <div class="cart">
                         <div class="box">
                             <a href="/">1 т 10 000 &#8381;&nbsp;<span class="icon-shopping-basket"></span> </a>
@@ -92,7 +95,7 @@
     <section class="sec1">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-3 col-xs-12 vertical_menu_cont">
                 <h4 class="heading"><span class="icon-menu"></span>Каталог товаров</h4>
                 <nav class="vertical_menu">
                     <ul>
@@ -112,7 +115,7 @@
                     </ul>
                 </nav>
                 </div>
-                <div class="col-md-9">
+                <div class="col-md-9 col-xs-12">
                     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                         <!-- Indicators -->
                         <ol class="carousel-indicators">
@@ -165,8 +168,9 @@
                 </div>
                 <div class="col-md-9">
                     <h2>Хиты продаж</h2>
-                    <div class="row hits">
-                        <div class="product col-md-3 col-lg-3">
+                    <div class="row hits owl-carousel">
+                        <!--Product-->
+                        <div class="product">
                             <div class="plaska-news">Новинка</div>
                             <a href="#"><img src="assets/img/img_product.jpg" title="" alt=""/>
                                 <a href="/">
@@ -191,52 +195,380 @@
 
                                 <div class="availbal text-center">В наличие</div>
                         </div>
+                    <!--EndProduct-->
+                        <!--Product-->
+                        <div class="product">
+                            <div class="plaska-news">Новинка</div>
+                            <a href="#"><img src="assets/img/img_product.jpg" title="" alt=""/>
+                                <a href="/">
+                                    <p class="pagetitle">Табак Adalya - Cactus (Кактус) 50 гр</p>
+                                </a>
 
+                                <div class="rating">
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <a href="/" class="tinytext"><u>25</u></a>
+                                </div>
+                                <p class="price text-center">1500 &#8381;</p>
 
+                                <p align="center">
+                                <span class="btn4 top-center">
+                                    <button class="btn box"> в корзину</button>
+                                </span>
+                                </p>
+
+                                <div class="availbal text-center">В наличие</div>
+                        </div>
+                        <!--EndProduct-->
+                        <!--Product-->
+                        <div class="product">
+                            <div class="plaska-news">Новинка</div>
+                            <a href="#"><img src="assets/img/img_product.jpg" title="" alt=""/>
+                                <a href="/">
+                                    <p class="pagetitle">Табак Adalya - Cactus (Кактус) 50 гр</p>
+                                </a>
+
+                                <div class="rating">
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <a href="/" class="tinytext"><u>25</u></a>
+                                </div>
+                                <p class="price text-center">1500 &#8381;</p>
+
+                                <p align="center">
+                                <span class="btn4 top-center">
+                                    <button class="btn box"> в корзину</button>
+                                </span>
+                                </p>
+
+                                <div class="availbal text-center">В наличие</div>
+                        </div>
+                        <!--EndProduct-->
+                        <!--Product-->
+                        <div class="product">
+                            <div class="plaska-news">Новинка</div>
+                            <a href="#"><img src="assets/img/img_product.jpg" title="" alt=""/>
+                                <a href="/">
+                                    <p class="pagetitle">Табак Adalya - Cactus (Кактус) 50 гр</p>
+                                </a>
+
+                                <div class="rating">
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <a href="/" class="tinytext"><u>25</u></a>
+                                </div>
+                                <p class="price text-center">1500 &#8381;</p>
+
+                                <p align="center">
+                                <span class="btn4 top-center">
+                                    <button class="btn box"> в корзину</button>
+                                </span>
+                                </p>
+
+                                <div class="availbal text-center">В наличие</div>
+                        </div>
+                        <!--EndProduct-->
+                        <!--Product-->
+                        <div class="product">
+                            <div class="plaska-news">Новинка</div>
+                            <a href="#"><img src="assets/img/img_product.jpg" title="" alt=""/>
+                                <a href="/">
+                                    <p class="pagetitle">Табак Adalya - Cactus (Кактус) 50 гр</p>
+                                </a>
+
+                                <div class="rating">
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <a href="/" class="tinytext"><u>25</u></a>
+                                </div>
+                                <p class="price text-center">1500 &#8381;</p>
+
+                                <p align="center">
+                                <span class="btn4 top-center">
+                                    <button class="btn box"> в корзину</button>
+                                </span>
+                                </p>
+
+                                <div class="availbal text-center">В наличие</div>
+                        </div>
+                        <!--EndProduct-->
                     </div>
+  <!--EndProductesLine-->
+                     <h2>Лучшие предложения</h2>
+                        <div class="row hits owl-carousel">
+                            <!--Product-->
+                            <div class="product">
+                                <div class="plaska-news">Новинка</div>
+                                <a href="#"><img src="assets/img/img_product.jpg" title="" alt=""/>
+                                    <a href="/">
+                                        <p class="pagetitle">Табак Adalya - Cactus (Кактус) 50 гр</p>
+                                    </a>
 
+                                    <div class="rating">
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <a href="/" class="tinytext"><u>25</u></a>
+                                    </div>
+                                    <p class="price text-center">1500 &#8381;</p>
+
+                                    <p align="center">
+                                <span class="btn4 top-center">
+                                    <button class="btn box"> в корзину</button>
+                                </span>
+                                    </p>
+
+                                    <div class="availbal text-center">В наличие</div>
+                            </div>
+                            <!--EndProduct-->
+                            <!--Product-->
+                            <div class="product">
+                                <div class="plaska-news">Новинка</div>
+                                <a href="#"><img src="assets/img/img_product.jpg" title="" alt=""/>
+                                    <a href="/">
+                                        <p class="pagetitle">Табак Adalya - Cactus (Кактус) 50 гр</p>
+                                    </a>
+
+                                    <div class="rating">
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <a href="/" class="tinytext"><u>25</u></a>
+                                    </div>
+                                    <p class="price text-center">1500 &#8381;</p>
+
+                                    <p align="center">
+                                <span class="btn4 top-center">
+                                    <button class="btn box"> в корзину</button>
+                                </span>
+                                    </p>
+
+                                    <div class="availbal text-center">В наличие</div>
+                            </div>
+                            <!--EndProduct-->
+                            <!--Product-->
+                            <div class="product">
+                                <div class="plaska-news">Новинка</div>
+                                <a href="#"><img src="assets/img/img_product.jpg" title="" alt=""/>
+                                    <a href="/">
+                                        <p class="pagetitle">Табак Adalya - Cactus (Кактус) 50 гр</p>
+                                    </a>
+
+                                    <div class="rating">
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <a href="/" class="tinytext"><u>25</u></a>
+                                    </div>
+                                    <p class="price text-center">1500 &#8381;</p>
+
+                                    <p align="center">
+                                <span class="btn4 top-center">
+                                    <button class="btn box"> в корзину</button>
+                                </span>
+                                    </p>
+
+                                    <div class="availbal text-center">В наличие</div>
+                            </div>
+                            <!--EndProduct-->
+                            <!--Product-->
+                            <div class="product">
+                                <div class="plaska-news">Новинка</div>
+                                <a href="#"><img src="assets/img/img_product.jpg" title="" alt=""/>
+                                    <a href="/">
+                                        <p class="pagetitle">Табак Adalya - Cactus (Кактус) 50 гр</p>
+                                    </a>
+
+                                    <div class="rating">
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <a href="/" class="tinytext"><u>25</u></a>
+                                    </div>
+                                    <p class="price text-center">1500 &#8381;</p>
+
+                                    <p align="center">
+                                <span class="btn4 top-center">
+                                    <button class="btn box"> в корзину</button>
+                                </span>
+                                    </p>
+
+                                    <div class="availbal text-center">В наличие</div>
+                            </div>
+                            <!--EndProduct-->
+                            <!--Product-->
+                            <div class="product">
+                                <div class="plaska-news">Новинка</div>
+                                <a href="#"><img src="assets/img/img_product.jpg" title="" alt=""/>
+                                    <a href="/">
+                                        <p class="pagetitle">Табак Adalya - Cactus (Кактус) 50 гр</p>
+                                    </a>
+
+                                    <div class="rating">
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <a href="/" class="tinytext"><u>25</u></a>
+                                    </div>
+                                    <p class="price text-center">1500 &#8381;</p>
+
+                                    <p align="center">
+                                <span class="btn4 top-center">
+                                    <button class="btn box"> в корзину</button>
+                                </span>
+                                    </p>
+
+                                    <div class="availbal text-center">В наличие</div>
+                            </div>
+                            <!--EndProduct-->
+                        </div>
+                </div>
+        </div>
+    </section>
+    <!--EndSectionTwo-->
+
+
+    <section class="sec3">
+        <div class="parallax-window"></div>
+            <div class="container">
+            <h1 class="text-center">почему выбирают нас</h1>
+            <div class="row my-flex-row">
+                <div class="col-md-4  col-xs-12">
+                    <div class="offers delivery">
+                        <p class="slogan">Бесплатная доставка<br/>
+                            <span>при заказе от 1900  &#8381;</span>
+                        </p>
+                        <div class="gradient"></div>
+                    </div>
+                </div>
+
+                <div class="col-md-4  col-xs-12">
+                    <div class="offers kolian">
+                        <p class="slogan">Широкий ассортимент</p>
+                        <div class="gradient"></div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4  col-xs-12">
+                    <div class="offers discount">
+                        <p class="slogan">Скидки и акции</p>
+                        <div class="gradient"></div>
+                    </div>
+                </div>
+                <div class="col-md-4  col-xs-12">
+                    <div class="offers garanty">
+                        <p class="slogan">Гарантия качества</p>
+                        <div class="gradient"></div>
+                    </div>
+                </div>
+                <div class="col-md-4  col-xs-12">
+                    <div class="offers tabako">
+                        <p class="slogan">Большой выбор табака и угля</p>
+                        <div class="gradient"></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="offers gifs">
+                        <p class="slogan">Подарки<br/>
+                            <span>при заказе от 2500 &#8381</span>
+                        </p>
+                        <div class="gradient"></div>
+                    </div>
                 </div>
             </div>
         </div>
 
     </section>
-    <!--EndSectionTwo-->
-           <div class="parallax-window">
-               <div class="container">
-                   <h1 class="text-center">почему выбирают нас</h1>
-                   <div class="row my-flex-row">
-                       <div class="col-md-4 offers delivery">
-                           <p class="slogan">Бесплатная доставка
-                            <span>при заказе от 1900  &#8381;</span>
-                           </p>
-                         <div class="gradient"></div>
-                       </div>
-
-                       <div class="col-md-4 offers kolian">
-                           <p class="slogan">Широкий ассортимент</p>
-                           <div class="gradient"></div>
-                       </div>
+    <!--EnddSection3-->
 
 
-                       <div class="col-md-4 offers discount">
-                           <p class="slogan">Скидки и акции</p>
-                           <div class="gradient"></div>
-                       </div>
-                       <div class="col-md-4 offers garanty">
-                           <p class="slogan">Гарантия качества</p>
-                           <div class="gradient"></div>
-                       </div>
-                       <div class="col-md-4 offers tabako"><p class="slogan">Большой выбор табака и угля</p></div>
-                       <div class="col-md-4 offers">
-                           <p class="slogan">Подарки
-                           <span>при заказе от 2500 &#8381</span>
-                           </p>
+
+
+    <section class="sec4">
+        <div class="container">
+            <div class="row"><div class="col-md-12">
+                <div id="accordion">
+                    <h3>Магазин кальянов Smokeum в Санкт-Петербурге</h3>
+                    <div>
+                        <p>
+                            Для тех жителей и гостей Санкт-Петербурга, которые решили приобрести кальян оптимальным решением будет обратиться в магазин «Smokeum», специализирующийся на торговле именно кальянами.
+                            Причины, побудившие человека купить кальян, могут быть самыми разными: поиск оригинального подарка курящему коллеге или приятелю, желание разнообразить свой досуг, смакуя приятный аромат и т.д. Важно, чтобы покупатель был доволен приобретением, и магазин «Smokeum» это обеспечит. Широкий выбор при безупречном качестве любого варианта, высокий уровень сервиса в сочетании с низкими ценами именно это ожидает посетителей нашего магазина.
+                        </p>
+                    </div>
+                    <h3>Почему стоит купить кальян в нашем магазине?</h3>
+                    <div>
+                        <p>
+                            Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+                            purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+                            velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+                            suscipit faucibus urna.
+                        </p>
+                    </div>
+                    <h3>Лучшие кальяны только в Smokeum</h3>
+                    <div>
+                        <p>
+                            Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+                            Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+                            ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+                            lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+                        </p>
                          </div>
-                   </div>
-               </div>
+                    <h3>Приобретение кальяна для домашнего использования</h3>
+                    <div>
+                        <p>
+                            Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+                            et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+                            faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+                            mauris vel est.
+                        </p>
+                                            </div>
+                    <h3> Приобретение кальяна для домашнего использования</h3>
+                        <div>
+                            <p>
+                                Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+                                et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+                                faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+                                mauris vel est.
+                            </p>
+                    </div>
+                    <h3>Почему кальян так популярен?</h3>
+                    <div>
+                        <p>
+                            Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+                            et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+                            faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+                            mauris vel est.
+                        </p>
+                    </div>
+          </div>
 
 
-           </div>
+            </div></div>
+        </div>
+    </section>
     <div class="heightfix"></div>
 </div>
 
@@ -330,22 +662,30 @@
 <!-- Site Sripts -->
 <script src="assets/js/bootstrap.js"></script>
 <script src="assets/js/parallax.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="assets/js/owl.carousel.js"></script>
 <script src="assets/js/functions.js"></script>
 <script src="assets/js/jquery.pixlayout.0.9.7.js"></script>
 
 </body>
 <script>
     $(function () {
-        $.pixlayout({
+    /*  $.pixlayout({
             src: "assets/img/img_1920.jpg",
             opacity: 0.6,
             top: 0,
             center: false,
             clip: true,
             show: false
+        });*/
+        $('.parallax-window').parallax({imageSrc: 'assets/img/parallax2.jpg'});
+        $( "#accordion" ).accordion();
+        $('.ui-accordion-header-icon').addClass('icon-chevron-down');
+        $(".owl-carousel").owlCarousel({
+            loop:true,
+            items:4,
+            nav:true
         });
-        $('.parallax-window').parallax({imageSrc: 'assets/img/parallax.jpg'})
-
     });
 </script>
 </html>
