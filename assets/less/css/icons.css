@@ -72,6 +72,9 @@
 .icon-envelope:before {
   content: "\f0e0";
 }
+.icon-angle-left:before {
+  content: "\f104";
+}
 .icon-angle-right:before {
   content: "\f105";
 }

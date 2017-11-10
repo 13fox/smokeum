@@ -102,3 +102,19 @@ input[type="text"] {
   color: #7e5ea7;
   font-size: 13px;
 }
+.btn4:hover {
+  background: #b959a2;
+  /* Old browsers */
+  background: -moz-linear-gradient(45deg, #b959a2 0%, #7e5fa7 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #b959a2 0%, #7e5fa7 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #b959a2 0%, #7e5fa7 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b959a2', endColorstr='#7e5fa7', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+}
+.btn4:hover .box {
+  background: none;
+  color: #FFFFFF;
+}

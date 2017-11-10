@@ -4,6 +4,8 @@
 
 .carousel {
   position: relative;
+  overflow: hidden;
+  max-height: 366px;
   top: 0px;
   h1 {
     color: @body-bg;
@@ -19,7 +21,7 @@
     }
   }
   .carousel-inner {
-   /* height: 366px;*/
+    /* height: 366px;*/
 
   }
   .item {
@@ -41,13 +43,19 @@
 .catalog {
   background: #f5f5f5;
 }
-.owl-item
-{
- float:left;
+
+.owl-carousel2 {
+  &:extend(.owl-owl-carousel);
 }
+
+.owl-item {
+  float: left;
+}
+
 .product {
   position: relative;
   margin-top: 15px;
+  left: 9px;
   padding: 22px 10px 10px 10px;
   background: #FFFFFF;
   .plaska-news {
@@ -59,12 +67,17 @@
     top: -5px;
     left: -9px;
   }
+
   p {
     padding-top: 12px;
   }
+  a:hover
+  {
+    color:@color;
+  }
   .pagetitle {
     font-size: ceil((@font-size-base * 0.9375));
-    padding-top: 18px;
+    padding-top: 14px;
     text-align: center;
     display: block;
   }
@@ -74,8 +87,9 @@
     text-align: center;
     a.tinytext {
       font-size: 11px;
-    }
-  }
+      color:#787878;
+       }
+      }
   .price {
     font-size: 18px;
     color: @accent;
@@ -88,17 +102,63 @@
     font-size: 11px;
     padding-top: 15px;
   }
+  .product_btn {
+    position: absolute;
+    top:80px;
+    margin-left: 20%;
+    margin-right: 20%;
+    display:none;
+
+  }
 }
+.hoverproduct {
+  -webkit-box-shadow: 2px 5px 12px 6px rgba(0,0,0,0.2);
+  -moz-box-shadow: 2px 5px 12px 6px rgba(0,0,0,0.2);
+  box-shadow: 2px 5px 12px 6px rgba(0,0,0,0.2);
+  background:#FFFFFF;
+  border:1px solid #c6c6c6;
+  .price {
+    font-weight: bold;
+  }
+  .product_btn {
+    display: block;
+     a
+       {
+        background:#7e5ea7;
+       .opacity(0.7);
+     &:hover
+         {
+       .opacity(1);
+         }
+     }
+  }
+}
+
+
+.navigation_block {
+  width: 100%;
+  position: relative;
+}
+
+.navigation {
+  position: absolute;
+  right: 0px;
+  top: -50px;
+  z-index: 800;
+  .btn4 .box {
+    font-size: 20px;
+  }
+}
+
 
 /*Parallax*/
 
 .parallax-window {
   min-height: 500px;
-  width:100%
+  width: 100%
 }
 
-.sec3
-{
+.sec3 {
   background: transparent;
   position: relative;
   overflow: hidden;
@@ -106,13 +166,12 @@
     position: relative;
 
   }
-.container
-{
+  .container {
 
-  margin-top:-500px;
-  margin-bottom:20px;
+    margin-top: -500px;
+    margin-bottom: 20px;
 
-}
+  }
 
   h1 {
     font-size: 2.250em;
@@ -173,74 +232,61 @@
   .gifs {
     background-image: url('@{img-folder}gifs.png'), url('@{img-folder}gifs_big.png');
   }
-  .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9
-  {
-    padding-left:5px;
-    padding-right:5px;
+  .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    padding-left: 5px;
+    padding-right: 5px;
   }
 }
 
-.sec4
-{
- h3
- {
-   color:#FFFFFF;
-   font-size:1.250em;
-   font-weight:@font-weight-base;
-   padding:16px 0px 16px 20px;
-   border:none;
-   margin-top:0px;
-   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b859a2+0,7e5ea6+100 */
-   background: rgb(184,89,162); /* Old browsers */
-   background: -moz-linear-gradient(left, rgba(184,89,162,1) 0%, rgba(126,94,166,1) 100%); /* FF3.6-15 */
-   background: -webkit-linear-gradient(left, rgba(184,89,162,1) 0%,rgba(126,94,166,1) 100%); /* Chrome10-25,Safari5.1-6 */
-   background: linear-gradient(to right, rgba(184,89,162,1) 0%,rgba(126,94,166,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b859a2', endColorstr='#7e5ea6',GradientType=1 ); /* IE6-9 */
-  .border-radius(3px);
-
- }
-  .ui-accordion-content
-  {
-    .bg-img("accardion_bg.png",right bottom);
-  }
-  p
-  {
-  font-size:@font-size-base;
-  color:@color;
-  font-weight:@font-weight-tiny;
-
+.sec4 {
+  h3 {
+    color: #FFFFFF;
+    font-size: 1.250em;
+    font-weight: @font-weight-base;
+    padding: 16px 0px 16px 20px;
+    border: none;
+    margin-top: 0px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b859a2+0,7e5ea6+100 */
+    background: rgb(184, 89, 162); /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(184, 89, 162, 1) 0%, rgba(126, 94, 166, 1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(184, 89, 162, 1) 0%, rgba(126, 94, 166, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(184, 89, 162, 1) 0%, rgba(126, 94, 166, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b859a2', endColorstr='#7e5ea6', GradientType=1); /* IE6-9 */
+    .border-radius(3px);
 
   }
-.ui-accordion-header-icon {
-  color:#FFFFFF;
-  position:absolute;
-  right:17px;
+  .ui-accordion-content {
+    .bg-img("accardion_bg.png", right bottom);
+  }
+  p {
+    font-size: @font-size-base;
+    color: @color;
+    font-weight: @font-weight-tiny;
+    padding:20px 20px 20px 20px;
+    text-align:left;
+
+  }
+  .ui-accordion-header-icon {
+    color: #FFFFFF;
+    position: absolute;
+    right: 17px;
+    cursor: pointer;
   }
 }
 
+@media (max-width: 640px) {
+  .carousel {
+    margin-top: 17px;
 
-@media (max-width: 640px)
-
-{
-  .carousel
-  {
-    margin-top:17px;
-
-    .carousel-caption
-    {
-      top:25px;
+    .carousel-caption {
+      top: 25px;
     }
 
   }
-  .sec3
-  {
+
+  .sec3 {
     .bg-img('parallax.jpg');
 
   }
-
-
-
-
-
 
 }

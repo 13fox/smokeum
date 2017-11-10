@@ -1,3 +1,4 @@
+extend ' .owl-owl-carousel' has no matches
 /*Carusel*/
 /*Основной цвет*/
 /*Цвет плашек*/
@@ -10,6 +11,8 @@
 /*footer*/
 .carousel {
   position: relative;
+  overflow: hidden;
+  max-height: 366px;
   top: 0px;
 }
 .carousel h1 {
@@ -51,6 +54,7 @@
 .product {
   position: relative;
   margin-top: 15px;
+  left: 9px;
   padding: 22px 10px 10px 10px;
   background: #FFFFFF;
 }
@@ -66,9 +70,12 @@
 .product p {
   padding-top: 12px;
 }
+.product a:hover {
+  color: #252525;
+}
 .product .pagetitle {
   font-size: 15px;
-  padding-top: 18px;
+  padding-top: 14px;
   text-align: center;
   display: block;
 }
@@ -79,6 +86,7 @@
 }
 .product .rating a.tinytext {
   font-size: 11px;
+  color: #787878;
 }
 .product .price {
   color: #7e5ea7;
@@ -90,6 +98,50 @@
   color: #43b41b;
   font-size: 11px;
   padding-top: 15px;
+}
+.product .product_btn {
+  position: absolute;
+  top: 80px;
+  margin-left: 20%;
+  margin-right: 20%;
+  display: none;
+}
+.hoverproduct {
+  -webkit-box-shadow: 2px 5px 12px 6px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 2px 5px 12px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 5px 12px 6px rgba(0, 0, 0, 0.2);
+  background: #FFFFFF;
+  border: 1px solid #c6c6c6;
+}
+.hoverproduct .price {
+  font-weight: bold;
+}
+.hoverproduct .product_btn {
+  display: block;
+}
+.hoverproduct .product_btn a {
+  background: #7e5ea7;
+  -webkit-opacity: 0.7;
+  -moz-opacity: 0.7;
+  opacity: 0.7;
+}
+.hoverproduct .product_btn a:hover {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+}
+.navigation_block {
+  width: 100%;
+  position: relative;
+}
+.navigation {
+  position: absolute;
+  right: 0px;
+  top: -50px;
+  z-index: 800;
+}
+.navigation .btn4 .box {
+  font-size: 20px;
 }
 /*Parallax*/
 .parallax-window {
@@ -259,11 +311,14 @@
   font-size: 16px;
   color: #252525;
   font-weight: 300;
+  padding: 20px 20px 20px 20px;
+  text-align: left;
 }
 .sec4 .ui-accordion-header-icon {
   color: #FFFFFF;
   position: absolute;
   right: 17px;
+  cursor: pointer;
 }
 @media (max-width: 640px) {
   .carousel {
