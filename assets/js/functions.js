@@ -3,10 +3,10 @@
 
   $(document).ready(function () {
 
-    /*  $(window).focus(function(){
+     $(window).focus(function(){
           setTimeout("location.reload()",200);
           console.log('reload');
-      });*/
+      });
 
    $('.product').hover(function(){
     $(this).addClass('hoverproduct');

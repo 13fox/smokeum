@@ -26,7 +26,7 @@
     <header>
         <div class="container">
             <div class="row my-flex-row">
-                <div class="col-md-2 logo col-xs-12">
+                <div class="col-md-2 logo col-xs-12 col-sm-4">
                     <a href="/">
                         <img src="assets/img/logo.png" title="" alt=""/>
                     </a>
@@ -40,22 +40,22 @@
                 <div class="col-md-3 col-lg-offset-2 delivery">
                     <p class="smalltext"><span class="icon-truck"></span>&nbsp;Бесплатная доставка от 1500 &#8381;</p>
                 </div>
-                <div class="col-md-2 col-lg-offset-1 private col-xs-6">
+                <div class="col-md-2 col-lg-offset-1 private col-xs-6 col-sm-4">
                     <span class="icon-user-circle"></span> <a href="/">Вход</a> / <a href="/">Регистрация</a>
                 </div>
-                <div class="col-md-3 col-md-push-2 col-xs-6 phone">
+                <div class="col-md-3 col-md-push-2 col-xs-6 col-sm-4 col-sm-push-4 phone">
                     <div>
                         <p>+7 (987) 012 34 56</p>
 
                         <p class="smalltext">Работаем с 11 до 21. Звоните!</p>
                     </div>
                 </div>
-                <div class="col-md-2  col-md-push-2 col-xs-6 callback_block ">
+                <div class="col-md-2  col-md-push-2 col-xs-6 col-sm-3 col-sm-offset-4 callback_block ">
                     <button class="btn btn1" data-toggle="modal" data-target="#callbackModal">
                         Обратный звонок
                     </button>
                 </div>
-                <div class="col-md-3 col-md-push-1 search_block col-xs-12">
+                <div class="col-md-3 col-md-push-1 search_block col-xs-12 col-sm-4">
                     <a href="/" id="navbtn" class="icon-menu">
                     </a>
                     <form id="searchform" action="" method="get"/>
@@ -63,7 +63,7 @@
                     <button id="btnsearch" class="btn btn2"><span class="sprite1-search"></span></button>
                     </form>
                 </div>
-                <div class="col-md-3  col-md-push-1 cart_block col-xs-12">
+                <div class="col-md-3  col-md-push-1 cart_block col-xs-12 col-sm-4 col-md-push-0">
                     <div class="cart">
                         <div class="box">
                             <a href="/">1 т 10 000 &#8381;&nbsp;<span class="icon-shopping-basket"></span> </a>
@@ -97,22 +97,22 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-xs-12 vertical_menu_cont">
-                <h4 class="heading"><span class="icon-menu"></span>Каталог товаров</h4>
+                <h4 class="heading"><span class="icon-menu"></span>Каталог товаров<span class="icon-chevron-up"></span></h4>
                 <nav class="vertical_menu">
                     <ul>
-                        <li><span class="sprite2-tube"></span> <a href="/">Табак для кальяна <span class="icon-angle-right"></span></a></li>
-                        <li><span class="sprite2-accessories"></span><a href="/">Дизайнерские кальяны <span class="icon-angle-right"></span></a></li>
+                        <li><span class="sprite2-tube"></span> <a href="/">Табак для кальяна <span class="icon-angle-right"></span><span class="icon-chevron-down"></span></a></li>
+                        <li><span class="sprite2-accessories"></span><a href="/">Дизайнерские кальяны <span class="icon-angle-right"></span><span class="icon-chevron-down"></span></a></li>
                         <li><span class="sprite2-design-hockan"></span>
-                            <a href="/">Египетские кальяны <span class="icon-angle-right"></span></a>
+                            <a href="/">Египетские кальяны <span class="icon-angle-right"></span><span class="icon-chevron-down"></span></a>
                             <ul class="submenu">
                                 <li><a href="/">Кальяны Фараон</a></li>
                                 <li><a href="/">Кальяны Khalil Mamoon</a></li>
                             </ul>
                         </li>
-                        <li><span class="sprite2-set"></span><a href="/">Кальянные наборы<span class="icon-angle-right"></span></a> </li>
-                        <li><span class="sprite2-egypet-hockan"></span><a href="/">Комплектующие <span class="icon-angle-right"></span></a></li>
-                        <li><span class="sprite2-coal"></span><a href="/">Уголь для кальяна <span class="icon-angle-right"></span></a></li>
-                        <li><span class="sprite2-sigarete"></span><a href="/">Электронные сигареты <span class="icon-angle-right"></span></a></li>
+                        <li><span class="sprite2-set"></span><a href="/">Кальянные наборы<span class="icon-angle-right"></span><span class="icon-chevron-down"></span></a> </li>
+                        <li><span class="sprite2-egypet-hockan"></span><a href="/">Комплектующие <span class="icon-angle-right"></span><span class="icon-chevron-down"></span></a></li>
+                        <li><span class="sprite2-coal"></span><a href="/">Уголь для кальяна <span class="icon-angle-right"></span><span class="icon-chevron-down"></span></a></li>
+                        <li><span class="sprite2-sigarete"></span><a href="/">Электронные сигареты <span class="icon-angle-right"></span><span class="icon-chevron-down"></span></a></li>
                     </ul>
                 </nav>
                 </div>
@@ -163,19 +163,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <asidae>
+                    <aside class="socialnetwork1">
                         <h4 class="heading">Социальные сети</h4>
-                    </asidae>
+                    </aside>
                 </div>
                 <div class="col-md-9">
-                    <h2>Хиты продаж</h2>
+                    <h2 id="hitstitle">Хиты продаж</h2>
                     <!-- Назад Вперед -->
-                    <div class="navigation_block">
-                        <div class="navigation">
+
+                        <div class="navigation" id="navigation">
                             <a href="#" id="js-prev" class="btn4"><span class="icon-angle-left btn box"></span></a>
                             <a href="#" id="js-next" class="btn4"><span class="icon-angle-right btn box"></span></a>
                         </div>
-                    </div>
+
 
                     <div class="row hits owl-carousel owl-carousel1">
                         <!--Product-->
@@ -320,15 +320,15 @@
                         <!--EndProduct-->
                     </div>
   <!--EndProductesLine-->
-                     <h2>Лучшие предложения</h2>
-                    <div class="navigation_block">
-                        <div class="navigation">
+                     <h2 id="bestofferstitle">Лучшие предложения</h2>
+
+                        <div class="navigation" id="navigation2">
                             <a href="#" id="js-prev2" class="btn4">
                                 <span class="icon-angle-left box btn"></span>
                             </a>
                             <a href="#" id="js-next2"  class="btn4"><span class="icon-angle-right box btn"></span></a>
                         </div>
-                    </div>
+
 
                         <div class="row best owl-carousel owl-carousel2">
                             <!--Product-->
@@ -702,19 +702,7 @@
             show: false
         });*/
         $('.parallax-window').parallax({imageSrc: 'assets/img/parallax2.jpg'});
-        $( "#accordion" ).accordion({
-            activate: function( event, ui )
-            {
-                $('.icon-chevron-up').click(function(){
-                    $(this).addClass('icon-chevron-dowm');
-                    $(this).removeClass('icon-chevron-up');
-                });
-                $('.icon-chevron-down').click(function(){
-                    $(this).addClass('icon-chevron-up');
-                    $(this).removeClass('icon-chevron-down');
-                });
-            }
-        });
+        $( "#accordion" ).accordion();
         $('.ui-accordion-header').each(function(){
             if($(this).hasClass('ui-accordion-header-active'))
             {
@@ -725,7 +713,16 @@
                 $(this).find('.ui-accordion-header-icon').addClass('icon-chevron-down');
             }
         });
-
+        $('.icon-chevron-up').on ('click',function(){
+            console.log('up');
+            $(this).addClass('icon-chevron-down');
+            $(this).removeClass('icon-chevron-up');
+        });
+        $('.icon-chevron-down').on('click',function(){
+            console.log('down');
+            $(this).addClass('icon-chevron-up');
+            $(this).removeClass('icon-chevron-down');
+        });
         window.owl = $('.owl-carousel1');
         window.owl2=$('.owl-carousel2');
        owl.owlCarousel({
@@ -738,11 +735,11 @@
                     items:2,
                     nav:true
                 },
-                600:{
-                    items:2,
+                640:{
+                    items:3,
                     navigation:true
                 },
-                1000:{
+                1024:{
                     items:4,
                     nav:true,
                     loop:false
@@ -759,11 +756,11 @@
                     items:2,
                     nav:true
                 },
-                600:{
-                    items:2,
+                640:{
+                    items:3,
                     navigation:true
                 },
-                1000:{
+                1024:{
                     items:4,
                     nav:true,
                     loop:false

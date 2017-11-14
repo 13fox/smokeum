@@ -9,7 +9,7 @@
   top: 0px;
   h1 {
     color: @body-bg;
-    font-size: @font-size-h1;
+    font-size: 1.875em;
     text-transform: uppercase;
     font-family: @font-family-black;
     font-weight: 900;
@@ -24,6 +24,7 @@
     /* height: 366px;*/
 
   }
+
   .item {
     position: relative;
   }
@@ -37,9 +38,18 @@
     position: absolute;
     z-index: 800;
   }
+  .carousel-indicators li
+  {
+    border:1px solid #8567ac;
+  }
+  .carousel-indicators .active
+  {
+    background: url('@{img-folder}bullet.png') no-repeat;
+    background-position: center;
+  }
 }
 
-/* Catalog*/
+/****************** Catalog*******************************/
 .catalog {
   background: #f5f5f5;
 }
@@ -112,9 +122,8 @@
   }
 }
 .hoverproduct {
-  -webkit-box-shadow: 2px 5px 12px 6px rgba(0,0,0,0.2);
-  -moz-box-shadow: 2px 5px 12px 6px rgba(0,0,0,0.2);
-  box-shadow: 2px 5px 12px 6px rgba(0,0,0,0.2);
+  box-shadow: 3px 3px 15px -1px #000000,
+  -6px 14px 24px -7px #000000;
   background:#FFFFFF;
   border:1px solid #c6c6c6;
   .price {
@@ -143,10 +152,18 @@
 .navigation {
   position: absolute;
   right: 0px;
-  top: -50px;
+
   z-index: 800;
   .btn4 .box {
     font-size: 20px;
+  }
+  #navigation
+  {
+    top: -15px;
+  }
+  #navigation2
+  {
+    top:400px;
   }
 }
 
@@ -187,7 +204,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    .opacity(0.6);
+    .opacity(0.2);
     top: 0px;
     left: 0px;
   }
@@ -237,7 +254,7 @@
     padding-right: 5px;
   }
 }
-
+/**********************Accardion*****************/
 .sec4 {
   h3 {
     color: #FFFFFF;
@@ -270,23 +287,89 @@
     color: #FFFFFF;
     position: absolute;
     right: 17px;
+    z-index:200;
     cursor: pointer;
   }
 }
-
+/*****************Media Query*******************/
 @media (max-width: 640px) {
+
   .carousel {
     margin-top: 17px;
+    padding-bottom:40px;
+    .carousel-inner
+    {
 
-    .carousel-caption {
-      top: 25px;
     }
+    .carousel-caption {
+      top: 1%;
+      font-size:10px;
+      padding-top:0px;
+      .btn
+      {
+        font-size:60%;
+      }
 
+    }
+ .carousel-indicators
+ {
+  bottom:0px;
+   z-index:970;
+ }
+ }
+
+
+  .catalog
+  {
+    margin-top:0px;
+    h2
+    {
+      text-align:center;
+    }
+    #bestofferstitle
+    {
+      padding-top:80px;
+    }
+    .navigation
+    {
+      width:90%;
+      margin-left:5%;
+      margin-right:5%;
+    }
+    #navigation
+    {
+      top: 44%;
+    }
+    #navigation2
+    {
+      top:101%;
+    }
+    #js-next, #js-next2
+    {
+     float:right;
+    }
   }
+
 
   .sec3 {
+     margin-top:70px;
     .bg-img('parallax.jpg');
+    h1
+    {
+      font-size:1.9em;
+      margin-bottom:13px;
+     padding-top:30px;
+    }
+  }
+  .sec4
+  {
 
   }
 
+  .sec4 h3
+  {
+    font-size:@font-size-base;
+    padding: 16px 20px 16px 20px;
+  }
 }
+
