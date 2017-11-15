@@ -1,0 +1,74 @@
+@import "../components/variables";
+@import "../components/mixins";
+.product_title
+{
+  text-transform: capitalize;
+}
+#msGallery
+{
+ position: relative;
+}
+#msGallery>a
+{
+ display:block;
+width:100%;
+text-align:center;
+border:1px solid #e1e1e1;
+  .plaska-news
+  {
+   top:5px;
+   left:15px;
+  }
+}
+
+.miniature
+{
+  position:absolute;
+  bottom:20px;
+  z-index:800;
+}
+#msProduct {
+  .rating {
+    margin-top: 0px;
+    text-align: left;
+  }
+  .social {
+    float: right;
+    a {
+      font-size: @font-weight-base;
+      margin-left:10px;
+      .border-radius(50%);
+      color: #FFFFFF;
+      padding: 5px 8px 5px 8px;
+      &:nth-child(1) {
+        background: #3b5998;
+      }
+      &:nth-child(2) {
+        background: #507299;
+      }
+      &:nth-child(3) {
+        background: #1da1f2;
+      }
+      &:nth-child(4) {
+        background: #e77924;
+      }
+    }
+
+  }
+  .price
+  {
+    font-family: Arial;
+    font-size:18px;
+    color:@accent;
+    padding-top:28px;
+    .old_price
+    {
+      color:@color-footer;
+    }
+  }
+  p.text
+  {
+    padding-top:30px;
+  }
+
+}

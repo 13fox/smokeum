@@ -51,7 +51,8 @@ header {
     z-index:960;
     position:absolute;
     width:100%;
-    top:26px;
+    top:36px;
+    height:1px;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+1,ffffff+21,8566ab+100 */
     background: rgb(255,255,255); /* Old browsers */
     background: -moz-linear-gradient(left,  rgba(255,255,255,1) 1%, rgba(255,255,255,1) 21%, rgba(133,102,171,1) 100%); /* FF3.6-15 */
@@ -96,7 +97,7 @@ header {
     padding-top: 16px;
   }
   .social {
-    padding-top: 15px;
+    padding-top: 10px;
     font-size: 15px;
     position: relative;
     left: 10px;
@@ -399,10 +400,7 @@ footer {
   color: #FFFFFF;
   font-weight: @font-weight-tiny;
 }
-/****************** Catalog*******************************/
-.catalog {
-  background: #f5f5f5;
-}
+
 
 .owl-carousel2 {
   &:extend(.owl-owl-carousel);
@@ -411,22 +409,40 @@ footer {
 .owl-item {
   float: left;
 }
+/****************** Catalog*******************************/
+.catalog {
+  background: #f5f5f5;
+}
+.plaska-news {
+  background: #00aeef;
+  font-size: 11px;
+  color: #FFFFFF;
+  position: absolute;
+  padding: 1px 5px 1px 5px;
+  top: -5px;
+  left: -9px;
+}
 
+.rating {
+  color: #ffbf44;
+  margin-top: 12px;
+  text-align: center;
+  a.tinytext {
+    font-size: 11px;
+    color:#787878;
+  }
+}
+.availbal {
+  color: #43b41b;
+  font-size: 11px;
+}
 .product {
   position: relative;
   margin-top: 15px;
   left: 9px;
   padding: 22px 10px 10px 10px;
   background: #FFFFFF;
-  .plaska-news {
-    background: #00aeef;
-    font-size: 11px;
-    color: #FFFFFF;
-    position: absolute;
-    padding: 1px 5px 1px 5px;
-    top: -5px;
-    left: -9px;
-  }
+
   .plaska-popular
   {
     .plaska-news;
@@ -452,15 +468,7 @@ footer {
     text-align: center;
     display: block;
   }
-  .rating {
-    color: #ffbf44;
-    margin-top: 12px;
-    text-align: center;
-    a.tinytext {
-      font-size: 11px;
-      color:#787878;
-    }
-  }
+
   .price {
     font-size: 18px;
     color: @accent;
@@ -469,8 +477,6 @@ footer {
     font-weight: normal;
   }
   .availbal {
-    color: #43b41b;
-    font-size: 11px;
     padding-top: 15px;
   }
   .product_btn {
@@ -530,7 +536,7 @@ footer {
   }
 }
 .breadcrumbs {
-  padding: 11px 0 15px 0;
+  padding: 0px 0 15px 0;
 }
 
 
@@ -549,7 +555,6 @@ footer {
 
 .breadcrumbs li a:after {
   display: inline-block;
-  margin: 0 5px 0 9px;
   vertical-align: middle;
 }
 

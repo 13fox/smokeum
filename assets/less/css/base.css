@@ -302,7 +302,8 @@ header .bg_line {
   z-index: 960;
   position: absolute;
   width: 100%;
-  top: 26px;
+  top: 36px;
+  height: 1px;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+1,ffffff+21,8566ab+100 */
   background: #ffffff;
   /* Old browsers */
@@ -349,7 +350,7 @@ header .phone > div > .smalltext {
   padding-top: 16px;
 }
 header .social {
-  padding-top: 15px;
+  padding-top: 10px;
   font-size: 15px;
   position: relative;
   left: 10px;
@@ -632,21 +633,14 @@ footer .footer_down .social_footer a {
   color: #FFFFFF;
   font-weight: 300;
 }
+.owl-item {
+  float: left;
+}
 /****************** Catalog*******************************/
 .catalog {
   background: #f5f5f5;
 }
-.owl-item {
-  float: left;
-}
-.product {
-  position: relative;
-  margin-top: 15px;
-  left: 9px;
-  padding: 22px 10px 10px 10px;
-  background: #FFFFFF;
-}
-.product .plaska-news {
+.plaska-news {
   background: #00aeef;
   font-size: 11px;
   color: #FFFFFF;
@@ -654,6 +648,26 @@ footer .footer_down .social_footer a {
   padding: 1px 5px 1px 5px;
   top: -5px;
   left: -9px;
+}
+.rating {
+  color: #ffbf44;
+  margin-top: 12px;
+  text-align: center;
+}
+.rating a.tinytext {
+  font-size: 11px;
+  color: #787878;
+}
+.availbal {
+  color: #43b41b;
+  font-size: 11px;
+}
+.product {
+  position: relative;
+  margin-top: 15px;
+  left: 9px;
+  padding: 22px 10px 10px 10px;
+  background: #FFFFFF;
 }
 .product .plaska-popular {
   background: #00aeef;
@@ -687,15 +701,6 @@ footer .footer_down .social_footer a {
   text-align: center;
   display: block;
 }
-.product .rating {
-  color: #ffbf44;
-  margin-top: 12px;
-  text-align: center;
-}
-.product .rating a.tinytext {
-  font-size: 11px;
-  color: #787878;
-}
 .product .price {
   color: #7e5ea7;
   font-family: Arial;
@@ -703,8 +708,6 @@ footer .footer_down .social_footer a {
   font-weight: normal;
 }
 .product .availbal {
-  color: #43b41b;
-  font-size: 11px;
   padding-top: 15px;
 }
 .product .product_btn {
@@ -756,7 +759,7 @@ footer .footer_down .social_footer a {
   top: 400px;
 }
 .breadcrumbs {
-  padding: 11px 0 15px 0;
+  padding: 0px 0 15px 0;
 }
 .breadcrumbs li,
 .breadcrumbs a {
@@ -775,7 +778,6 @@ footer .footer_down .social_footer a {
 }
 .breadcrumbs li a:after {
   display: inline-block;
-  margin: 0 5px 0 9px;
   vertical-align: middle;
 }
 /*Media Query*********/

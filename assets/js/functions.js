@@ -15,18 +15,6 @@
     $(this).removeClass('hoverproduct');
        }
    );
-      $('.parallax-window').parallax({imageSrc: 'assets/img/parallax2.jpg'});
-      $( "#accordion" ).accordion();
-      $('.ui-accordion-header').each(function(){
-          if($(this).hasClass('ui-accordion-header-active'))
-          {
-              $(this).find('.ui-accordion-header-icon').addClass('icon-chevron-up');
-          }
-          else
-          {
-              $(this).find('.ui-accordion-header-icon').addClass('icon-chevron-down');
-          }
-      });
       $('.icon-chevron-up').on ('click',function(){
           console.log('up');
           $(this).addClass('icon-chevron-down');
@@ -100,7 +88,7 @@
       });
 
 
-      $('.filters input').styler();
+
      // $('.jqselect').styler();
 
   }); //end ready
