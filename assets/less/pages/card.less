@@ -1,32 +1,45 @@
 @import "../components/variables";
 @import "../components/mixins";
-.product_title
-{
+
+.product_title {
   text-transform: capitalize;
+  padding-left:10px;
+  font-family: @font-weight-base;
 }
-#msGallery
-{
- position: relative;
+
+#msGallery {
+  position: relative;
 }
-#msGallery>a
-{
- display:block;
-width:100%;
-text-align:center;
-border:1px solid #e1e1e1;
-  .plaska-news
-  {
-   top:5px;
-   left:15px;
+
+#msGallery > a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  border: 1px solid #e1e1e1;
+  .plaska-news {
+    top: 5px;
+    left: 15px;
+  }
+
+}
+
+.miniature {
+  position: relative;
+  bottom: 63px;
+  z-index: 800;
+
+  .thumbnail {
+    border: 1px solid #e1e1e1;
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  .thumbnail.active {
+    border: 1px solid @accent;
   }
 }
 
-.miniature
-{
-  position:absolute;
-  bottom:20px;
-  z-index:800;
-}
 #msProduct {
   .rating {
     margin-top: 0px;
@@ -36,10 +49,11 @@ border:1px solid #e1e1e1;
     float: right;
     a {
       font-size: @font-weight-base;
-      margin-left:10px;
+      margin-left: 5px;
+      margin-right:5px;
       .border-radius(50%);
       color: #FFFFFF;
-      padding: 5px 8px 5px 8px;
+      padding: 6px 8px 6px 8px;
       &:nth-child(1) {
         background: #3b5998;
       }
@@ -55,20 +69,88 @@ border:1px solid #e1e1e1;
     }
 
   }
-  .price
-  {
+  .price {
     font-family: Arial;
-    font-size:18px;
-    color:@accent;
-    padding-top:28px;
-    .old_price
-    {
-      color:@color-footer;
+    font-size: 18px;
+    color: @accent;
+    padding-top: 28px;
+    .old_price {
+      color: @color-footer;
     }
   }
-  p.text
-  {
-    padding-top:30px;
+  p.text {
+    padding-top: 30px;
   }
 
+  .groupcolor {
+    clear: both;
+    margin-top:25px;
+    .color {
+      background: #ffffff;
+      margin-top: 2px;
+      padding: 1px;
+      border: solid 1px #e1e1e1;
+      width: 22px;
+      height: 22px;
+      display: inline-block;
+      &:hover {
+        border: solid 2px #7e5ea7;
+      }
+      span {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+      }
+
+    }
+  }
+  .groupcount {
+    clear: both;
+    margin-top:25px;
+      input {
+        text-align: center;
+        float: left;
+        height:23px;
+      }
+    #count
+    {
+      width:37px;
+    }
+    #plus
+    {
+      width:23px;
+    }
+    #minus
+    {
+      width:23px;
+    }
+    label {
+      float: left;
+      padding-right: 20px;
+    }
+  }
+  .groupbay
+   {
+   clear:both;
+    padding-top:25px;
+    button
+    {
+    float:left;
+      }
+    .btn4
+    {
+      clear:both;
+
+    }
+    a
+    {
+      margin-left:5px;
+      margin-bottom:5px;
+    }
+  }
+}
+.tab-pane p
+{
+  color:#787878;
+  padding-top:30px;
 }

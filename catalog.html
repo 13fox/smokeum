@@ -706,8 +706,8 @@
 <footer>
     <div class="footer_up">
         <div class="container">
-            <div class="row">
-                <div class="col-md-3">
+            <div class="row my-flex-row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
                     <a class="logo_footer" href="/">
                         <img src="assets/img/logo_footer.png" title="" alt=""/>
                     </a>
@@ -719,7 +719,7 @@
                         советских времен.
                     </p>
                 </div>
-                <div class="col-md-2 col-md-offset-1 col-xs-12">
+                <div class="col-md-2 col-md-offset-1 col-xs-12 col-sm-6">
                     <h4>Интернет-магазин</h4>
                     <nav>
                         <ul>
@@ -734,7 +734,7 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="col-md-3  col-xs-12">
+                <div class="col-md-3  col-xs-12  col-sm-6">
                     <h4>Каталог товаров</h4>
                     <nav>
                         <ul>
@@ -748,7 +748,7 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="col-md-3 col-xs-12">
+                <div class="col-md-3 col-xs-12  col-sm-6">
                     <h4 class="mediumtext"><span class="icon-phone"></span> <span>+7 (987) 012 34 56</span></h4>
 
                     <p class="text"><span class="icon-map-marker"></span><span>Название улицы, д.10, оф.100
@@ -767,14 +767,14 @@
     <div class="footer_down">
         <div class="container">
             <div class="row">
-                <div class="col-md-7">
+                <div class="col-md-7 col-sm-6">
                     <p class="tinytext">МИНЗДРАВ ПРЕДУПРЕЖДАЕТ: КУРЕНИЕ ВРЕДИТ ВАШЕМУ ЗДОРОВЬЮ. Мы не осуществляем
                         дистанционную торговлю табачными изделиями. Информация представленная на сайте не является
                         публичной офертой</p>
 
                     <p class="tinytext copy">&copy; 2017. Все права защищены</p>
                 </div>
-                <div class="col-md-3 social_footer col-xs-12 ">
+                <div class="col-md-3 social_footer col-xs-12 col-sm-6 ">
                     <a href=""><span class="icon-vk2"></span></a>
                     <a href=""><span class="icon-instagram"></span></a>
                     <a href=""><span class="icon-facebook"></span></a>
@@ -794,21 +794,36 @@
 <script src="assets/js/parallax.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="assets/js/owl.carousel.js"></script>
-<script src="assets/js/jquery.formstyler.min.js"></script>
 <script src="assets/js/functions.js"></script>
 <script src="assets/js/jquery.pixlayout.0.9.7.js"></script>
+
 </body>
 <script>
-  * $(function () {
-   /*     $.pixlayout({
-         src: "assets/img/smokeum_catalog_1920px.jpg",
+    $(function () {
+        /* $.pixlayout({
+         src: "assets/img/img_1920.jpg",
          opacity: 0.6,
          top: 0,
          center: false,
          clip: true,
          show: false
          });*/
-      $('.filters input').styler();
+        if($(window).width()>640)
+        {
+            $('.parallax-window').parallax({imageSrc: 'assets/img/parallax2.jpg'});
+        };
+
+        $( "#accordion" ).accordion();
+        $('.ui-accordion-header').each(function(){
+            if($(this).hasClass('ui-accordion-header-active'))
+            {
+                $(this).find('.ui-accordion-header-icon').addClass('icon-chevron-up chevron');
+            }
+            else
+            {
+                $(this).find('.ui-accordion-header-icon').addClass('icon-chevron-down');
+            }
+        });
 
     });
 </script>

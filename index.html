@@ -98,22 +98,22 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-xs-12 vertical_menu_cont">
-                    <h4 class="heading"><span class="sprite4icon-catalog"></span>&nbsp;&nbsp;Каталог товаров<span class="icon-chevron-up"></span></h4>
+                    <h4 class="heading"><span class="sprite4icon-catalog"></span>&nbsp;&nbsp;Каталог товаров<span class="icon-chevron-up chevron chevron"></span></h4>
                 <nav class="vertical_menu">
                     <ul>
-                        <li><span class="sprite2-tube"></span> <a href="/">Табак для кальяна <span class="icon-angle-right"></span><span class="icon-chevron-down"></span></a></li>
-                        <li><span class="sprite2-accessories"></span><a href="/">Дизайнерские кальяны <span class="icon-angle-right"></span><span class="icon-chevron-down"></span></a></li>
+                        <li><span class="sprite2-tube"></span> <a href="/">Табак для кальяна <span class="icon-angle-right"></span><span class="icon-chevron-down chevron"></span></a></li>
+                        <li><span class="sprite2-accessories"></span><a href="/">Дизайнерские кальяны <span class="icon-angle-right"></span><span class="icon-chevron-down chevron"></span></a></li>
                         <li><span class="sprite2-design-hockan"></span>
-                            <a href="/">Египетские кальяны <span class="icon-angle-right"></span><span class="icon-chevron-down"></span></a>
+                            <a href="/">Египетские кальяны <span class="icon-angle-right"></span><span class="icon-chevron-down chevron"></span></a>
                             <ul class="submenu">
                                 <li><a href="/">Кальяны Фараон</a></li>
                                 <li><a href="/">Кальяны Khalil Mamoon</a></li>
                             </ul>
                         </li>
-                        <li><span class="sprite2-set"></span><a href="/">Кальянные наборы<span class="icon-angle-right"></span><span class="icon-chevron-down"></span></a> </li>
-                        <li><span class="sprite2-egypet-hockan"></span><a href="/">Комплектующие <span class="icon-angle-right"></span><span class="icon-chevron-down"></span></a></li>
-                        <li><span class="sprite2-coal"></span><a href="/">Уголь для кальяна <span class="icon-angle-right"></span><span class="icon-chevron-down"></span></a></li>
-                        <li><span class="sprite2-sigarete"></span><a href="/">Электронные сигареты <span class="icon-angle-right"></span><span class="icon-chevron-down"></span></a></li>
+                        <li><span class="sprite2-set"></span><a href="/">Кальянные наборы<span class="icon-angle-right"></span><span class="icon-chevron-down chevron"></span></a> </li>
+                        <li><span class="sprite2-egypet-hockan"></span><a href="/">Комплектующие <span class="icon-angle-right"></span><span class="icon-chevron-down chevron"></span></a></li>
+                        <li><span class="sprite2-coal"></span><a href="/">Уголь для кальяна <span class="icon-angle-right"></span><span class="icon-chevron-down chevron"></span></a></li>
+                        <li><span class="sprite2-sigarete"></span><a href="/">Электронные сигареты <span class="icon-angle-right"></span><span class="icon-chevron-down chevron"></span></a></li>
                     </ul>
                 </nav>
                 </div>
@@ -600,8 +600,8 @@
 <footer>
     <div class="footer_up">
         <div class="container">
-            <div class="row">
-                <div class="col-md-3">
+            <div class="row my-flex-row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
                     <a class="logo_footer" href="/">
                         <img src="assets/img/logo_footer.png" title="" alt=""/>
                     </a>
@@ -613,7 +613,7 @@
                         советских времен.
                     </p>
                 </div>
-                <div class="col-md-2 col-md-offset-1 col-xs-12">
+                <div class="col-md-2 col-md-offset-1 col-xs-12 col-sm-6">
                     <h4>Интернет-магазин</h4>
                     <nav>
                         <ul>
@@ -628,7 +628,7 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="col-md-3  col-xs-12">
+                <div class="col-md-3  col-xs-12  col-sm-6">
                     <h4>Каталог товаров</h4>
                     <nav>
                         <ul>
@@ -642,7 +642,7 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="col-md-3 col-xs-12">
+                <div class="col-md-3 col-xs-12  col-sm-6">
                     <h4 class="mediumtext"><span class="icon-phone"></span> <span>+7 (987) 012 34 56</span></h4>
 
                     <p class="text"><span class="icon-map-marker"></span><span>Название улицы, д.10, оф.100
@@ -661,14 +661,14 @@
     <div class="footer_down">
         <div class="container">
             <div class="row">
-                <div class="col-md-7">
+                <div class="col-md-7 col-sm-6">
                     <p class="tinytext">МИНЗДРАВ ПРЕДУПРЕЖДАЕТ: КУРЕНИЕ ВРЕДИТ ВАШЕМУ ЗДОРОВЬЮ. Мы не осуществляем
                         дистанционную торговлю табачными изделиями. Информация представленная на сайте не является
                         публичной офертой</p>
 
                     <p class="tinytext copy">&copy; 2017. Все права защищены</p>
                 </div>
-                <div class="col-md-3 social_footer col-xs-12 ">
+                <div class="col-md-3 social_footer col-xs-12 col-sm-6 ">
                     <a href=""><span class="icon-vk2"></span></a>
                     <a href=""><span class="icon-instagram"></span></a>
                     <a href=""><span class="icon-facebook"></span></a>
@@ -702,12 +702,16 @@
             clip: true,
             show: false
         });*/
-        $('.parallax-window').parallax({imageSrc: 'assets/img/parallax2.jpg'});
+          if($(window).width()>640)
+          {
+              $('.parallax-window').parallax({imageSrc: 'assets/img/parallax2.jpg'});
+          };
+
         $( "#accordion" ).accordion();
         $('.ui-accordion-header').each(function(){
             if($(this).hasClass('ui-accordion-header-active'))
             {
-                $(this).find('.ui-accordion-header-icon').addClass('icon-chevron-up');
+                $(this).find('.ui-accordion-header-icon').addClass('icon-chevron-up chevron');
             }
             else
             {

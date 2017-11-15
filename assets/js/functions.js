@@ -3,10 +3,10 @@
 
   $(document).ready(function () {
 
-     $(window).focus(function(){
+    /* $(window).focus(function(){
           setTimeout("location.reload()",200);
           console.log('reload');
-      });
+      });*/
 
    $('.product').hover(function(){
     $(this).addClass('hoverproduct');
@@ -15,16 +15,12 @@
     $(this).removeClass('hoverproduct');
        }
    );
-      $('.icon-chevron-up').on ('click',function(){
-          console.log('up');
-          $(this).addClass('icon-chevron-down');
-          $(this).removeClass('icon-chevron-up');
+      $('.chevron').on ('click',function(){
+          $(this).toggleClass('icon-chevron-up');
+          $(this).toggleClass('icon-chevron-down');
+
       });
-      $('.icon-chevron-down').on('click',function(){
-          console.log('down');
-          $(this).addClass('icon-chevron-up');
-          $(this).removeClass('icon-chevron-down');
-      });
+     
       window.owl = $('.owl-carousel1');
       window.owl2=$('.owl-carousel2');
       owl.owlCarousel({
@@ -94,4 +90,17 @@
   }); //end ready
 
 }(jQuery));
+
+var count = 1;
+var countEl = document.getElementById("count");
+function plus(){
+    count++;
+    countEl.value = count;
+}
+function minus(){
+    if (count > 1) {
+        count--;
+        countEl.value = count;
+    }
+}
 

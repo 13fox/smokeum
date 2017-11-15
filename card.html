@@ -152,61 +152,77 @@
                                 </a>
 
                                 <div class="row miniature">
-                                    <div class="span2 col-md-2">
+                                    <div class="span2 col-md-2 col-xs-2 col-sm-2">
                                         <a href="/" class="thumbnail" data-image="">
                                             <img src="assets/img/img_tov_small.jpg" alt="" title=""/>
                                         </a>
                                     </div>
-                                    <div class="span2 col-md-2">
+                                    <div class="span2 col-md-2  col-xs-2 col-sm-2">
                                         <a href="/" class="thumbnail" data-image="">
                                             <img src="assets/img/img_tov_small.jpg" alt="" title=""/>
                                         </a>
                                     </div>
                                 </div>
                             </div>
-                        </div><!--EndGallery-->
+                        </div>
+                        <!--EndGallery-->
                         <div class="span6 col-md-6">
                             <form class="form-horizontal ms2_form" method="post">
                                 <input type="hidden" name="id" value="">
+
                                 <div class="row">
-                                        <div class="rating col-md-6">
-                                            <span class="icon-star"></span>
-                                            <span class="icon-star"></span>
-                                            <span class="icon-star"></span>
-                                            <span class="icon-star"></span>
-                                            <span class="icon-star"></span>
-                                            <a href="/" class="tinytext"><u>25</u></a>
+                                    <div class="rating col-md-6 col-xs-6">
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <span class="icon-star"></span>
+                                        <a href="/" class="tinytext"><u>25</u></a>
+                                    </div>
+                                    <div class="social col-md-6 col-xs-6">
+                                        <a href="/"><span class="icon-facebook"></span></a>
+                                        <a href="/"><span class="icon-vk2"></span></a>
+                                        <a href="/"><span class="icon-twitter"></span></a>
+                                        <a href="/"><span class="icon-odnoklassniki"></span></a>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="price">
+                                            <span class="old_price light"><strike>2500 руб.</strike></span>
+                                            2000 руб.
+                                            <p class="availbal"><span class="icon-check-square-o"></span> В наличии</p>
                                         </div>
-                                        <div class="social col-md-6">
-                                            <a href="/"><span class="icon-facebook"></span></a>
-                                            <a href="/"><span class="icon-vk2"></span></a>
-                                            <a href="/"><span class="icon-twitter"></span></a>
-                                            <a href="/"><span class="icon-instagram"></span></a>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="price">
-                                                <span class="old_price light"><strike>2500 руб.</strike></span>
-                                                2000 руб.
-                                                <p class="availbal"> В наличии</p>
-                                         </div>
-                                        <p class="text">Кальян Фараон 2006 - это премиальный дизайнерский кальян в полной комплектации, который можно недорого купить в магазине кальянов PiterSmoke с доставкой по России и всему миру.</p>
+                                        <p class="text">Кальян Фараон 2006 - это премиальный дизайнерский кальян в
+                                            полной комплектации, который можно недорого купить в магазине кальянов
+                                            PiterSmoke с доставкой по России и всему миру.</p>
 
-                                        <div class="buycontrol">
-                                            <input type="number" name="count" id="product_price"
-                                                   class="input-sm form-control" value="1">
-                                            <button type="submit" class="btn btn-default" name="ms2_action"
-                                                    value="cart/add">
-                                                Купить
-                                            </button>
-                                            <a href="shop/zhestkie-diski/sata/zhest.disk-2.5-i.norys-320-gb.html#oneClick"
-                                               id="oneClick" class="btn_one_click"
-                                               data-hash="2633f49f77a8b56dc6b595b21b0535bc" data-product="486">Купить в
-                                                1 клик</a>
+                                        <div class="groupcolor">
+                                            <label class="mediumtext"">Цвет </label>
+                                            <a href="/" class="color"><span class="colorbox blue"></span></a>
+                                            <a href="/" class="color"><span class="colorbox magenta"></span></a>
+                                            <a href="/" class="color"><span class="colorbox black"></span></a>
 
                                         </div>
+                                        <div class="groupcount">
+                                            <label class="mediumtext"">Количество</label>
+                                            <input type="text" name="minus" id="minus" value="-" onclick="minus()"/>
+                                            <input type="text" name="count" id="count" value="1"/>
+                                            <input type="text" name="plus"  id="plus" value="+" onclick="plus()"/>
+                                        </div>
+                                        <div class="groupbay">
+                                            <div class="clearfix">
+                                                <button type="submit" class="btn btn1" name="ms2_action"
+                                                        value="cart/add">В корзину
+                                                </button>
+                                                <a href="/" class="btn3"><span class="sprite1-heart"></span></a>
+                                                <a href="/" class="btn3"><span class="sprite1-compare"></span></a>
+                                            </div>
+                                            <div class="btn4 clearfix">
+                                                <button class="btn box">Купить в 1 клик</button>
+                                            </div>
+                                        </div>
+                                        <p class="text">Категории:<span class="mediumtext"> Кальяны Pharaon</span></p>
 
                                     </div>
-
 
                                 </div>
 
@@ -217,6 +233,24 @@
                     </div>
 
 
+
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#reviews" class="heading" data-toggle="tab">обзор</a></li>
+                <li><a href="#tickets"  class="heading"  data-toggle="tab">отзывы</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+             <div class="tab-content">
+                 <div class="tab-pane active" id="reviews">
+                    <p class="text">Кальян Фараон 2006 — входит в новейшую линейку компании Pharaon (Фараон). Это дизайнерский кальян, который продается в полном комплекте: шахта, колба, уплотнители, чаша, мундштук, силиконовый шланг. И при этом имеет сверх выгодную цену. Если вы хотите купить дизайнерский кальян в полной комплектации и не переплатить за него, то Кальян Фараон 2006 - это то, что вы ищите.</p>
+                     <p class="text"> Все современные кальяны марки Pharaon (Фараон) имеют идеальные курительные характеристики, качественные материалы, отличную покраску. По соотношению цена/качество занимают лидирующие позиции на кальянном рынке. Расцветки кальяна могут меняться, лучше уточняйте у менеджеров.</p>
+                    <p class="text"> Вы можете купить недорого Кальян Фараон 2006 в СПб, в любом магазине сети "PiterSmoke" или в нашем интернет магазине кальянов.</p>
+                     <p class="text">  Купить кальян можно, оставив заявку на нашем сайте или позвонив по телефонам: 8 (800) 775-85-16 или 8 (812) 245-37-62. Звонок бесплатный!</p>
+                </div>
+                <div class="tab-pane" id="tickets">...</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -231,7 +265,7 @@
                     </aside>
                 </div>
                 <div class="col-md-9">
-                    <h2 id="hitstitle">Хиты продаж</h2>
+                    <h2 id="hitstitle">С этим товаром покупают</h2>
                     <!-- Назад Вперед -->
 
                     <div class="navigation" id="navigation">
@@ -383,7 +417,7 @@
                         <!--EndProduct-->
                     </div>
                     <!--EndProductesLine-->
-                    <h2 id="bestofferstitle">Лучшие предложения</h2>
+                    <h2 id="bestofferstitle">Похожие товары</h2>
 
                     <div class="navigation" id="navigation2">
                         <a href="#" id="js-prev2" class="btn4">
@@ -535,147 +569,6 @@
     </section>
     <!--EndSectionTwo-->
 
-
-    <section class="sec3">
-        <div class="parallax-window"></div>
-        <div class="container">
-            <h1 class="text-center">почему выбирают нас</h1>
-
-            <div class="row my-flex-row">
-                <div class="col-md-4  col-xs-12 col-sm-6">
-                    <div class="offers delivery">
-                        <p class="slogan">Бесплатная доставка<br/>
-                            <span>при заказе от 1900  &#8381;</span>
-                        </p>
-
-                        <div class="gradient"></div>
-                    </div>
-                </div>
-
-                <div class="col-md-4  col-xs-12 col-sm-6">
-                    <div class="offers kolian">
-                        <p class="slogan">Широкий ассортимент</p>
-
-                        <div class="gradient"></div>
-                    </div>
-                </div>
-
-
-                <div class="col-md-4  col-xs-12 col-sm-6">
-                    <div class="offers discount">
-                        <p class="slogan">Скидки и акции</p>
-
-                        <div class="gradient"></div>
-                    </div>
-                </div>
-                <div class="col-md-4  col-xs-12 col-sm-6">
-                    <div class="offers garanty">
-                        <p class="slogan">Гарантия качества</p>
-
-                        <div class="gradient"></div>
-                    </div>
-                </div>
-                <div class="col-md-4  col-xs-12 col-sm-6">
-                    <div class="offers tabako">
-                        <p class="slogan">Большой выбор табака и угля</p>
-
-                        <div class="gradient"></div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-xs-12 col-sm-6">
-                    <div class="offers gifs">
-                        <p class="slogan">Подарки<br/>
-                            <span>при заказе от 2500 &#8381</span>
-                        </p>
-
-                        <div class="gradient"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-    <!--EnddSection3-->
-
-
-    <section class="sec4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div id="accordion">
-                        <h3>Магазин кальянов Smokeum в Санкт-Петербурге</h3>
-
-                        <div>
-                            <p>
-                                Для тех жителей и гостей Санкт-Петербурга, которые решили приобрести кальян оптимальным
-                                решением будет обратиться в магазин «Smokeum», специализирующийся на торговле именно
-                                кальянами.
-                                Причины, побудившие человека купить кальян, могут быть самыми разными: поиск
-                                оригинального
-                                подарка курящему коллеге или приятелю, желание разнообразить свой досуг, смакуя приятный
-                                аромат и т.д. Важно, чтобы покупатель был доволен приобретением, и магазин «Smokeum» это
-                                обеспечит. Широкий выбор при безупречном качестве любого варианта, высокий уровень
-                                сервиса в
-                                сочетании с низкими ценами именно это ожидает посетителей нашего магазина.
-                            </p>
-                        </div>
-                        <h3>Почему стоит купить кальян в нашем магазине?</h3>
-
-                        <div>
-                            <p>
-                                Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
-                                purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
-                                velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
-                                suscipit faucibus urna.
-                            </p>
-                        </div>
-                        <h3>Лучшие кальяны только в Smokeum</h3>
-
-                        <div>
-                            <p>
-                                Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
-                                Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
-                                ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
-                                lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
-                            </p>
-                        </div>
-                        <h3>Приобретение кальяна для домашнего использования</h3>
-
-                        <div>
-                            <p>
-                                Cras dictum. Pellentesque habitant morbi tristique senectus et netus
-                                et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
-                                faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
-                                mauris vel est.
-                            </p>
-                        </div>
-                        <h3> Приобретение кальяна для домашнего использования</h3>
-
-                        <div>
-                            <p>
-                                Cras dictum. Pellentesque habitant morbi tristique senectus et netus
-                                et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
-                                faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
-                                mauris vel est.
-                            </p>
-                        </div>
-                        <h3>Почему кальян так популярен?</h3>
-
-                        <div>
-                            <p>
-                                Cras dictum. Pellentesque habitant morbi tristique senectus et netus
-                                et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
-                                faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
-                                mauris vel est.
-                            </p>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
-    </section>
     <div class="heightfix"></div>
 </div>
 
@@ -683,8 +576,8 @@
 <footer>
     <div class="footer_up">
         <div class="container">
-            <div class="row">
-                <div class="col-md-3">
+            <div class="row my-flex-row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
                     <a class="logo_footer" href="/">
                         <img src="assets/img/logo_footer.png" title="" alt=""/>
                     </a>
@@ -696,7 +589,7 @@
                         советских времен.
                     </p>
                 </div>
-                <div class="col-md-2 col-md-offset-1 col-xs-12">
+                <div class="col-md-2 col-md-offset-1 col-xs-12 col-sm-6">
                     <h4>Интернет-магазин</h4>
                     <nav>
                         <ul>
@@ -711,7 +604,7 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="col-md-3  col-xs-12">
+                <div class="col-md-3  col-xs-12  col-sm-6">
                     <h4>Каталог товаров</h4>
                     <nav>
                         <ul>
@@ -725,7 +618,7 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="col-md-3 col-xs-12">
+                <div class="col-md-3 col-xs-12  col-sm-6">
                     <h4 class="mediumtext"><span class="icon-phone"></span> <span>+7 (987) 012 34 56</span></h4>
 
                     <p class="text"><span class="icon-map-marker"></span><span>Название улицы, д.10, оф.100
@@ -744,14 +637,14 @@
     <div class="footer_down">
         <div class="container">
             <div class="row">
-                <div class="col-md-7">
+                <div class="col-md-7 col-sm-6">
                     <p class="tinytext">МИНЗДРАВ ПРЕДУПРЕЖДАЕТ: КУРЕНИЕ ВРЕДИТ ВАШЕМУ ЗДОРОВЬЮ. Мы не осуществляем
                         дистанционную торговлю табачными изделиями. Информация представленная на сайте не является
                         публичной офертой</p>
 
                     <p class="tinytext copy">&copy; 2017. Все права защищены</p>
                 </div>
-                <div class="col-md-3 social_footer col-xs-12 ">
+                <div class="col-md-3 social_footer col-xs-12 col-sm-6 ">
                     <a href=""><span class="icon-vk2"></span></a>
                     <a href=""><span class="icon-instagram"></span></a>
                     <a href=""><span class="icon-facebook"></span></a>
@@ -785,6 +678,22 @@
          clip: true,
          show: false
          });*/
+        if($(window).width()>640)
+        {
+            $('.parallax-window').parallax({imageSrc: 'assets/img/parallax2.jpg'});
+        };
+
+        $( "#accordion" ).accordion();
+        $('.ui-accordion-header').each(function(){
+            if($(this).hasClass('ui-accordion-header-active'))
+            {
+                $(this).find('.ui-accordion-header-icon').addClass('icon-chevron-up chevron');
+            }
+            else
+            {
+                $(this).find('.ui-accordion-header-icon').addClass('icon-chevron-down');
+            }
+        });
 
     });
 </script>

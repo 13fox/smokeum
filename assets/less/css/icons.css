@@ -81,6 +81,12 @@
 .icon-menu:before {
   content: "\e9bd";
 }
+.icon-odnoklassniki:before {
+  content: "\f263";
+}
+.icon-check-square-o:before {
+  content: "\f046";
+}
 .sprite1-compare,
 .sprite1-heart,
 .sprite1-phone,

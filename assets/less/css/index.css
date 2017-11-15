@@ -265,3 +265,19 @@
     padding: 16px 20px 16px 20px;
   }
 }
+@media (min-width: 640px) and (max-width: 1023px) {
+  .carousel {
+    margin-top: 20px;
+    font-size: 80%;
+  }
+  .carousel .carousel-caption {
+    top: 40px !important;
+  }
+  .sec3 {
+    background-image: url('../img/parallax.jpg');
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
