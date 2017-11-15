@@ -1,9 +1,12 @@
 @import "../components/variables";
 @import "../components/mixins";
-
+/***Filter**/
 .filters
 {
-
+  fieldset
+  {
+   border-bottom:1px solid #e1e1e1;
+  }
  h4
  {
    margin-top:28px;
@@ -11,8 +14,9 @@
  .fieldset-title
  {
    width:100%;
+   padding:13px 0px 15px 13px
  }
-  .icon-chevron-up
+  .icon-chevron-up, .icon-chevron-down
   {
     float:right;
   }
@@ -20,7 +24,53 @@
   {
   font-weight:@font-weight-tiny;
   color:#787878;
+   font-size:ceil((@font-size-base*0.875));
+    margin-left:13px;
+  }
+  input[type="checkbox"]
+  {
+    box-sizing: border-box;
+    padding: 0;
+  }
+  nobr
+  {
+    font-weight:@font-weight-tiny;
+    color:#787878;
     font-size:ceil((@font-size-base*0.875));
+    margin-left:13px;
+    padding-left:0px;
+  }
+  .filterbutton
+  {
+    background:#e1e1e1;
+    padding-top:10px;
+    padding-bottom:10px;
+  }
+}
+/****EndFilter******/
+.rubricbutton
+{
+margin-top:10px;
+  margin-bottom:16px;
+ .btn1
+ {
+   padding:14px 36px 14px 36px;
+ }
+}
 
+.sortbutton
+{
+  margin-top:16px;
+  background:#e1e1e1;
+padding:10px 10px 10px 10px;
+}
+
+.viewmore
+{
+  background:#b8a7cf;
+  color:#FFFFFF;
+  padding:14px 0px 14px 0px;
+  a{
+    color:#FFFFFF;
   }
 }

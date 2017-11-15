@@ -64,7 +64,7 @@
                     <button id="btnsearch" class="btn btn2"><span class="sprite1-search"></span></button>
                     </form>
                 </div>
-                <div class="col-md-3  col-md-push-1 cart_block col-xs-12 col-sm-4 col-md-push-0">
+                <div class="col-md-3  col-md-push-1 cart_block col-xs-12 col-sm-4">
                     <div class="cart">
                         <div class="box">
                             <a href="/">1 т 10 000 &#8381;&nbsp;<span class="icon-shopping-basket"></span> </a>
@@ -98,7 +98,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-xs-12 vertical_menu_cont">
-                <h4 class="heading"><span class="icon-menu"></span>Каталог товаров<span class="icon-chevron-up"></span></h4>
+                    <h4 class="heading"><span class="sprite4icon-catalog"></span>&nbsp;&nbsp;Каталог товаров<span class="icon-chevron-up"></span></h4>
                 <nav class="vertical_menu">
                     <ul>
                         <li><span class="sprite2-tube"></span> <a href="/">Табак для кальяна <span class="icon-angle-right"></span><span class="icon-chevron-down"></span></a></li>
@@ -702,89 +702,6 @@
             clip: true,
             show: false
         });*/
-        $('.parallax-window').parallax({imageSrc: 'assets/img/parallax2.jpg'});
-        $( "#accordion" ).accordion();
-        $('.ui-accordion-header').each(function(){
-            if($(this).hasClass('ui-accordion-header-active'))
-            {
-                $(this).find('.ui-accordion-header-icon').addClass('icon-chevron-up');
-            }
-            else
-            {
-                $(this).find('.ui-accordion-header-icon').addClass('icon-chevron-down');
-            }
-        });
-        $('.icon-chevron-up').on ('click',function(){
-            console.log('up');
-            $(this).addClass('icon-chevron-down');
-            $(this).removeClass('icon-chevron-up');
-        });
-        $('.icon-chevron-down').on('click',function(){
-            console.log('down');
-            $(this).addClass('icon-chevron-up');
-            $(this).removeClass('icon-chevron-down');
-        });
-        window.owl = $('.owl-carousel1');
-        window.owl2=$('.owl-carousel2');
-       owl.owlCarousel({
-            loop:true,
-            navigation: true,
-            responsiveClass:true,
-            nav:true,
-            responsive:{
-                0:{
-                    items:2,
-                    nav:true
-                },
-                640:{
-                    items:3,
-                    navigation:true
-                },
-                1024:{
-                    items:4,
-                    nav:true,
-                    loop:false
-                }
-            }
-        });
-      owl2.owlCarousel({
-            loop:true,
-            navigation: true,
-            responsiveClass:true,
-            nav:true,
-            responsive:{
-                0:{
-                    items:2,
-                    nav:true
-                },
-                640:{
-                    items:3,
-                    navigation:true
-                },
-                1024:{
-                    items:4,
-                    nav:true,
-                    loop:false
-                }
-            }
-        });
-       $('#js-prev').click(function() {
-            owl.trigger('prev.owl.carousel');
-            return false;
-        })
-        $('#js-next').click(function() {
-            owl.trigger('next.owl.carousel', [300]);
-            return false;
-        });
-        $('#js-prev2').click(function() {
-            owl2.trigger('prev.owl.carousel');
-            return false;
-        })
-// Go to the previous item
-        $('#js-next2').click(function() {
-            owl2.trigger('next.owl.carousel', [300]);
-            return false;
-        });
 
     });
 </script>

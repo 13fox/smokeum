@@ -108,6 +108,7 @@ header {
   }
   .private {
     padding-top: 8px;
+    float:right;
   }
   .social a {
     color: @accent;
@@ -426,6 +427,17 @@ footer {
     top: -5px;
     left: -9px;
   }
+  .plaska-popular
+  {
+    .plaska-news;
+    background:#ef9b2f;
+  }
+  .plaska-discount
+  {
+    .plaska-news;
+    background:#43b41b;
+  }
+
 
   p {
     padding-top: 12px;
@@ -469,8 +481,10 @@ footer {
     display:none;
 
   }
+
 }
 .hoverproduct {
+  padding: 20px 10px 10px 10px;
   box-shadow: 3px 3px 15px -1px #000000,
   -6px 14px 24px -7px #000000;
   background:#FFFFFF;
@@ -515,6 +529,30 @@ footer {
     top:400px;
   }
 }
+.breadcrumbs {
+  padding: 11px 0 15px 0;
+}
+
+
+.breadcrumbs li, .breadcrumbs a {
+  line-height: 1.0;
+  vertical-align: middle;
+  .smalltext
+}
+.breadcrumbs a
+{
+  text-decoration:underline;
+}
+.breadcrumbs li {
+  display: inline-block;
+}
+
+.breadcrumbs li a:after {
+  display: inline-block;
+  margin: 0 5px 0 9px;
+  vertical-align: middle;
+}
+
 
 
 /*Media Query*********/

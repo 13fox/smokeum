@@ -53,6 +53,13 @@ h2 {
   font-family: 'MuseoSansBlack';
   text-transform: uppercase;
 }
+article h2 {
+  color: #333333;
+  font-weight: 700;
+  font-family: 600;
+  font-size: 1.5em;
+  padding-top: 40px;
+}
 h4 {
   color: #FFFFFF;
   text-transform: uppercase;
@@ -71,6 +78,7 @@ h4 {
 .tinytext {
   font-family: 'MuseoSansRegular';
   font-size: 10px;
+  font-weight: 300;
 }
 .smalltext {
   font-family: 'MuseoSansRegular';

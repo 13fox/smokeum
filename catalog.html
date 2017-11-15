@@ -8,7 +8,8 @@
     <title>Title</title>
     <link rel="stylesheet" href="assets/css/owl.carousel.css"/>
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css"/>
-
+    <link  rel="stylesheet" href="assets/css/jquery.formstyler.css"/>
+    <link rel="stylesheet" href="assets/css/jquery.formstyler.theme.css"/>
     <!-- Import main styles -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -59,18 +60,19 @@
                 <div class="col-md-3 col-md-push-1 search_block col-xs-12 col-sm-12">
                     <a href="/" id="navbtn" class="icon-menu">
                     </a>
+
                     <form id="searchform" action="" method="get"/>
                     <input id="searchfield" class="" type="text" placeholder="Поиск по сайту"/>
                     <button id="btnsearch" class="btn btn2"><span class="sprite1-search"></span></button>
                     </form>
                 </div>
-                <div class="col-md-3  col-md-push-1 cart_block col-xs-12 col-sm-4 col-md-push-0">
+                <div class="col-md-3  col-md-push-1 cart_block col-xs-12 col-sm-4">
                     <div class="cart">
                         <div class="box">
                             <a href="/">1 т 10 000 &#8381;&nbsp;<span class="icon-shopping-basket"></span> </a>
                         </div>
                     </div>
-                     <a href="/" class="btn3"><span class="sprite1-heart"></span></a>
+                    <a href="/" class="btn3"><span class="sprite1-heart"></span></a>
                     <a href="/" class="btn3"><span class="sprite1-compare"></span></a>
                 </div>
             </div>
@@ -98,67 +100,139 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-xs-12 vertical_menu_cont">
-                <h4 class="heading"><span class="icon-menu"></span>Каталог товаров<span class="icon-chevron-up"></span></h4>
-                <nav class="vertical_menu">
-                    <ul>
-                        <li><span class="sprite2-tube"></span> <a href="/">Табак для кальяна <span class="icon-angle-right"></span><span class="icon-chevron-down"></span></a></li>
-                        <li><span class="sprite2-accessories"></span><a href="/">Дизайнерские кальяны <span class="icon-angle-right"></span><span class="icon-chevron-down"></span></a></li>
-                        <li><span class="sprite2-design-hockan"></span>
-                            <a href="/">Египетские кальяны <span class="icon-angle-right"></span><span class="icon-chevron-down"></span></a>
-                            <ul class="submenu">
-                                <li><a href="/">Кальяны Фараон</a></li>
-                                <li><a href="/">Кальяны Khalil Mamoon</a></li>
-                            </ul>
-                        </li>
-                        <li><span class="sprite2-set"></span><a href="/">Кальянные наборы<span class="icon-angle-right"></span><span class="icon-chevron-down"></span></a> </li>
-                        <li><span class="sprite2-egypet-hockan"></span><a href="/">Комплектующие <span class="icon-angle-right"></span><span class="icon-chevron-down"></span></a></li>
-                        <li><span class="sprite2-coal"></span><a href="/">Уголь для кальяна <span class="icon-angle-right"></span><span class="icon-chevron-down"></span></a></li>
-                        <li><span class="sprite2-sigarete"></span><a href="/">Электронные сигареты <span class="icon-angle-right"></span><span class="icon-chevron-down"></span></a></li>
-                    </ul>
-                </nav>
-                <div class="filters">
-                    <h4 class="heading"><span class="icon-menu"></span>Фильтры</h4>
-                    <form action="" method="post" id="mse2_filters" class="filter-form">
-                        <fieldset>
-                            <div class="fieldset-title">Вид табака <span class="icon-chevron-up"></span></div>
-                            <label>
-                                <div id="mse2_msoption|size_0-styler" class="jq-checkbox" unselectable="on" style="user-select: none; display: inline-block; position: relative; overflow: hidden;">
-                                    <input type="checkbox" value="">
-                                    <div class="jq-checkbox__div"></div></div> Недорогой табак для кальяна
-                            </label><br>
-                            <label>
-                                <div id="mse2_msoption|size_0-styler" class="jq-checkbox" unselectable="on" style="user-select: none; display: inline-block; position: relative; overflow: hidden;">
-                                    <input type="checkbox" value="">
-                                    <div class="jq-checkbox__div"></div></div> Крафтовый табак для кальяна
-                            </label><br>
-                            <label>
-                                <div id="mse2_msoption|size_0-styler" class="jq-checkbox" unselectable="on" style="user-select: none; display: inline-block; position: relative; overflow: hidden;">
-                                    <input type="checkbox" value="">
-                                    <div class="jq-checkbox__div"></div></div> Премиум табак для кальяна
-                            </label><br>
-                            <label>
-                                <div id="mse2_msoption|size_0-styler" class="jq-checkbox" unselectable="on" style="user-select: none; display: inline-block; position: relative; overflow: hidden;">
-                                    <input type="checkbox" value="">
-                                    <div class="jq-checkbox__div"></div></div> Безникотиновый табак для кальяна
-                            </label>
-                        </fieldset>
-                        <fieldset>
-                            <div class="fieldset-title">Вес табака в пачке <span class="icon-chevron-up"></span></div>
-                            </fieldset>
-                    </form>
+                    <h4 class="heading"><span class="sprite4icon-catalog"></span>&nbsp;&nbsp;Каталог товаров<span
+                            class="icon-chevron-up"></span></h4>
+                    <nav class="vertical_menu">
+                        <ul>
+                            <li><span class="sprite2-tube"></span> <a href="/">Табак для кальяна <span
+                                    class="icon-angle-right"></span><span class="icon-chevron-down"></span></a></li>
+                            <li><span class="sprite2-accessories"></span><a href="/">Дизайнерские кальяны <span
+                                    class="icon-angle-right"></span><span class="icon-chevron-down"></span></a></li>
+                            <li><span class="sprite2-design-hockan"></span>
+                                <a href="/">Египетские кальяны <span class="icon-angle-right"></span><span
+                                        class="icon-chevron-down"></span></a>
+                                <ul class="submenu">
+                                    <li><a href="/">Кальяны Фараон</a></li>
+                                    <li><a href="/">Кальяны Khalil Mamoon</a></li>
+                                </ul>
+                            </li>
+                            <li><span class="sprite2-set"></span><a href="/">Кальянные наборы<span
+                                    class="icon-angle-right"></span><span class="icon-chevron-down"></span></a></li>
+                            <li><span class="sprite2-egypet-hockan"></span><a href="/">Комплектующие <span
+                                    class="icon-angle-right"></span><span class="icon-chevron-down"></span></a></li>
+                            <li><span class="sprite2-coal"></span><a href="/">Уголь для кальяна <span
+                                    class="icon-angle-right"></span><span class="icon-chevron-down"></span></a></li>
+                            <li><span class="sprite2-sigarete"></span><a href="/">Электронные сигареты <span
+                                    class="icon-angle-right"></span><span class="icon-chevron-down"></span></a></li>
+                        </ul>
+                    </nav>
+                    <div class="filters">
+                        <h4 class="heading"><span class="sprite4icon-filters"></span>&nbsp;&nbsp;Фильтры</h4>
 
-                </div>
+                        <form action="" method="post" id="mse2_filters" class="filter-form">
+                            <fieldset>
+                                <div class="fieldset-title">Вид табака <span class="icon-chevron-up"></span></div>
+                                <label>
+                                    <input type="checkbox" value="">
+                                    Недорогой табак для кальяна
+                                </label><br>
+                                <label>
+                                    <input type="checkbox" value="">
+                                    Крафтовый табак для кальяна
+                                </label><br>
+                                <label>
+
+                                    <input type="checkbox" value="">
+                                    Премиум табак для кальяна
+                                </label><br>
+                                <label>
+
+                                    <input type="checkbox" value="">
+                                    Безникотиновый табак для кальяна
+                                </label>
+                            </fieldset>
+                            <fieldset>
+                                <div class="fieldset-title">Вес табака в пачке <span class="icon-chevron-down"></span>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <div class="fieldset-title">Бренды
+                                    <nobr>Недорогой табак для кальяна</nobr>
+                                    <span class="icon-chevron-down"></span></div>
+                            </fieldset>
+                            <fieldset>
+                                <div class="fieldset-title">Бренды
+                                    <nobr>Крафтовый табак для кальяна</nobr>
+                                    <span class="icon-chevron-down"></span></div>
+                            </fieldset>
+                            <fieldset>
+                                <div class="fieldset-title">Бренды<br/>
+                                    <nobr>Премиум табак для кальяна</nobr>
+                                    <span class="icon-chevron-down"></span></div>
+                            </fieldset>
+                            <div class="filterbutton">
+                                <p align="center">
+                                    <button class="btn btn5">Показать</button>
+                                    <button class="btn btn5-inverse">Очистить</button>
+                                </p>
+                            </div>
+
+                        </form>
+
+                    </div>
 
                 </div>
                 <div class="col-md-9 col-xs-12">
                     <nav class="breadcrumbs">
-                        <ul><li><a href="/">Главная</a></li>
+                        <ul>
+                            <li><a href="/">Главная</a> <span class="icon-angle-right"></span><span
+                                    class="icon-angle-right"></span>
+                            </li>
                             <li>Каталог</li>
                         </ul>
                     </nav>
                     <h2>Табак для кальяна</h2>
-                    <p>Для тех жителей и гостей Санкт-Петербурга, которые решили приобрести кальян оптимальным решением будет обратиться в магазин «Smokeum», специализирующийся на торговле именно кальянами.</p>
-                    <div class="row">
+
+                    <p>Для тех жителей и гостей Санкт-Петербурга, которые решили приобрести кальян оптимальным решением
+                        будет обратиться в магазин «Smokeum», специализирующийся на торговле именно кальянами.</p>
+
+                    <div class="row rubricbutton">
+                        <div class="col-md-3">
+                            <button class="btn1 btn">недорогой<br/>
+                                табак для кальяна
+                            </button>
+                        </div>
+                        <div class="col-md-3">
+                            <button class="btn1 btn"> крафтовый<br/>
+                                табак для кальяна
+                            </button>
+                        </div>
+                        <div class="col-md-3">
+                            <button class="btn1 btn">премиум<br/> табак
+                                для кальяна
+                            </button>
+                        </div>
+                        <div class="col-md-3">
+                            <button class="btn1 btn">безникотиновый<br/> табак для кальяна</button>
+                        </div>
+                    </div>
+                    <div class="row sortbutton">
+                        <div class="col-md-1">
+                            <label class="smalltext">Сортировать </label>
+                            </div>
+                            <div class="col-md-3">
+                              <select class="jqselect" name="" id="">
+                                <option value="В наличие">В наличие</option>
+                            </select>
+                            </div>
+
+                        <div class="col-md-1 col-md-offset-7">
+                            <a href="/"><span class="sprite4icon-sorttable"></span></a>
+                            <a href="/"><span class="sprite4icon-sortlist"></span></a>
+                        </div>
+                    </div>
+
+                    <div class="row catalog">
                         <!--Product-->
                         <div class="product col-md-3 col-xs-6 col-sm-4">
                             <div class="plaska-news">Новинка</div>
@@ -185,445 +259,446 @@
 
                                 <div class="availbal text-center">В наличие</div>
                         </div>
+                        <!--EndProduct-->
+                        <!--Product-->
+                        <div class="product col-md-3 col-xs-6 col-sm-4">
+                            <div class="plaska-popular">Популярное</div>
+                            <a href="#"><img src="assets/img/img_product.jpg" title="" alt=""/>
+                                <a href="/">
+                                    <p class="pagetitle">Табак Adalya - Cactus (Кактус) 50 гр</p>
+                                </a>
 
+                                <div class="rating">
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <a href="/" class="tinytext"><u>25</u></a>
+                                </div>
+                                <p class="price text-center">1500 &#8381;</p>
+
+                                <p align="center">
+                                <span class="btn4 top-center">
+                                    <button class="btn box"> в корзину</button>
+                                </span>
+                                </p>
+
+                                <div class="availbal text-center">В наличие</div>
+                        </div>
+                        <!--EndProduct-->
+                        <!--Product-->
+                        <div class="product col-md-3 col-xs-6 col-sm-4">
+                            <div class="plaska-discount">Скидка</div>
+                            <a href="#"><img src="assets/img/img_product.jpg" title="" alt=""/>
+                                <a href="/">
+                                    <p class="pagetitle">Табак Adalya - Cactus (Кактус) 50 гр</p>
+                                </a>
+
+                                <div class="rating">
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <a href="/" class="tinytext"><u>25</u></a>
+                                </div>
+                                <p class="price text-center">1500 &#8381;</p>
+
+                                <p align="center">
+                                <span class="btn4 top-center">
+                                    <button class="btn box"> в корзину</button>
+                                </span>
+                                </p>
+
+                                <div class="availbal text-center">В наличие</div>
+                        </div>
+                        <!--EndProduct-->
+                        <!--Product-->
+                        <div class="product col-md-3 col-xs-6 col-sm-4">
+                            <div class="plaska-discount">Скидка</div>
+                            <a href="#"><img src="assets/img/img_product.jpg" title="" alt=""/>
+                                <a href="/">
+                                    <p class="pagetitle">Табак Adalya - Cactus (Кактус) 50 гр</p>
+                                </a>
+
+                                <div class="rating">
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <a href="/" class="tinytext"><u>25</u></a>
+                                </div>
+                                <p class="price text-center">1500 &#8381;</p>
+
+                                <p align="center">
+                                <span class="btn4 top-center">
+                                    <button class="btn box"> в корзину</button>
+                                </span>
+                                </p>
+
+                                <div class="availbal text-center">В наличие</div>
+                        </div>
+                        <!--EndProduct-->
+                        <div class="product col-md-3 col-xs-6 col-sm-4">
+                            <div class="plaska-news">Новинка</div>
+                            <a href="#"><img src="assets/img/img_product.jpg" title="" alt=""/>
+                                <a href="/">
+                                    <p class="pagetitle">Табак Adalya - Cactus (Кактус) 50 гр</p>
+                                </a>
+
+                                <div class="rating">
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <a href="/" class="tinytext"><u>25</u></a>
+                                </div>
+                                <p class="price text-center">1500 &#8381;</p>
+
+                                <p align="center">
+                                <span class="btn4 top-center">
+                                    <button class="btn box"> в корзину</button>
+                                </span>
+                                </p>
+
+                                <div class="availbal text-center">В наличие</div>
+                        </div>
+                        <!--EndProduct-->
+                        <!--Product-->
+                        <div class="product col-md-3 col-xs-6 col-sm-4">
+                            <div class="plaska-popular">Популярное</div>
+                            <a href="#"><img src="assets/img/img_product.jpg" title="" alt=""/>
+                                <a href="/">
+                                    <p class="pagetitle">Табак Adalya - Cactus (Кактус) 50 гр</p>
+                                </a>
+
+                                <div class="rating">
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <a href="/" class="tinytext"><u>25</u></a>
+                                </div>
+                                <p class="price text-center">1500 &#8381;</p>
+
+                                <p align="center">
+                                <span class="btn4 top-center">
+                                    <button class="btn box"> в корзину</button>
+                                </span>
+                                </p>
+
+                                <div class="availbal text-center">В наличие</div>
+                        </div>
+                        <!--EndProduct-->
+                        <!--Product-->
+                        <div class="product col-md-3 col-xs-6 col-sm-4">
+                            <div class="plaska-discount">Скидка</div>
+                            <a href="#"><img src="assets/img/img_product.jpg" title="" alt=""/>
+                                <a href="/">
+                                    <p class="pagetitle">Табак Adalya - Cactus (Кактус) 50 гр</p>
+                                </a>
+
+                                <div class="rating">
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <a href="/" class="tinytext"><u>25</u></a>
+                                </div>
+                                <p class="price text-center">1500 &#8381;</p>
+
+                                <p align="center">
+                                <span class="btn4 top-center">
+                                    <button class="btn box"> в корзину</button>
+                                </span>
+                                </p>
+
+                                <div class="availbal text-center">В наличие</div>
+                        </div>
+                        <!--EndProduct-->
+                        <!--Product-->
+                        <div class="product col-md-3 col-xs-6 col-sm-4">
+                            <div class="plaska-discount">Скидка</div>
+                            <a href="#"><img src="assets/img/img_product.jpg" title="" alt=""/>
+                                <a href="/">
+                                    <p class="pagetitle">Табак Adalya - Cactus (Кактус) 50 гр</p>
+                                </a>
+
+                                <div class="rating">
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <a href="/" class="tinytext"><u>25</u></a>
+                                </div>
+                                <p class="price text-center">1500 &#8381;</p>
+
+                                <p align="center">
+                                <span class="btn4 top-center">
+                                    <button class="btn box"> в корзину</button>
+                                </span>
+                                </p>
+
+                                <div class="availbal text-center">В наличие</div>
+                        </div>
+                        <!--EndProduct-->
+                        <div class="product col-md-3 col-xs-6 col-sm-4">
+                            <div class="plaska-news">Новинка</div>
+                            <a href="#"><img src="assets/img/img_product.jpg" title="" alt=""/>
+                                <a href="/">
+                                    <p class="pagetitle">Табак Adalya - Cactus (Кактус) 50 гр</p>
+                                </a>
+
+                                <div class="rating">
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <a href="/" class="tinytext"><u>25</u></a>
+                                </div>
+                                <p class="price text-center">1500 &#8381;</p>
+
+                                <p align="center">
+                                <span class="btn4 top-center">
+                                    <button class="btn box"> в корзину</button>
+                                </span>
+                                </p>
+
+                                <div class="availbal text-center">В наличие</div>
+                        </div>
+                        <!--EndProduct-->
+                        <!--Product-->
+                        <div class="product col-md-3 col-xs-6 col-sm-4">
+                            <div class="plaska-popular">Популярное</div>
+                            <a href="#"><img src="assets/img/img_product.jpg" title="" alt=""/>
+                                <a href="/">
+                                    <p class="pagetitle">Табак Adalya - Cactus (Кактус) 50 гр</p>
+                                </a>
+
+                                <div class="rating">
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <a href="/" class="tinytext"><u>25</u></a>
+                                </div>
+                                <p class="price text-center">1500 &#8381;</p>
+
+                                <p align="center">
+                                <span class="btn4 top-center">
+                                    <button class="btn box"> в корзину</button>
+                                </span>
+                                </p>
+
+                                <div class="availbal text-center">В наличие</div>
+                        </div>
+                        <!--EndProduct-->
+                        <!--Product-->
+                        <div class="product col-md-3 col-xs-6 col-sm-4">
+                            <div class="plaska-discount">Скидка</div>
+                            <a href="#"><img src="assets/img/img_product.jpg" title="" alt=""/>
+                                <a href="/">
+                                    <p class="pagetitle">Табак Adalya - Cactus (Кактус) 50 гр</p>
+                                </a>
+
+                                <div class="rating">
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <a href="/" class="tinytext"><u>25</u></a>
+                                </div>
+                                <p class="price text-center">1500 &#8381;</p>
+
+                                <p align="center">
+                                <span class="btn4 top-center">
+                                    <button class="btn box"> в корзину</button>
+                                </span>
+                                </p>
+
+                                <div class="availbal text-center">В наличие</div>
+                        </div>
+                        <!--EndProduct-->
+                        <!--Product-->
+                        <div class="product col-md-3 col-xs-6 col-sm-4">
+                            <div class="plaska-discount">Скидка</div>
+                            <a href="#"><img src="assets/img/img_product.jpg" title="" alt=""/>
+                                <a href="/">
+                                    <p class="pagetitle">Табак Adalya - Cactus (Кактус) 50 гр</p>
+                                </a>
+
+                                <div class="rating">
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <a href="/" class="tinytext"><u>25</u></a>
+                                </div>
+                                <p class="price text-center">1500 &#8381;</p>
+
+                                <p align="center">
+                                <span class="btn4 top-center">
+                                    <button class="btn box"> в корзину</button>
+                                </span>
+                                </p>
+
+                                <div class="availbal text-center">В наличие</div>
+                        </div>
+                        <!--EndProduct-->
+                        <div class="product col-md-3 col-xs-6 col-sm-4">
+                            <div class="plaska-news">Новинка</div>
+                            <a href="#"><img src="assets/img/img_product.jpg" title="" alt=""/>
+                                <a href="/">
+                                    <p class="pagetitle">Табак Adalya - Cactus (Кактус) 50 гр</p>
+                                </a>
+
+                                <div class="rating">
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <a href="/" class="tinytext"><u>25</u></a>
+                                </div>
+                                <p class="price text-center">1500 &#8381;</p>
+
+                                <p align="center">
+                                <span class="btn4 top-center">
+                                    <button class="btn box"> в корзину</button>
+                                </span>
+                                </p>
+
+                                <div class="availbal text-center">В наличие</div>
+                        </div>
+                        <!--EndProduct-->
+                        <!--Product-->
+                        <div class="product col-md-3 col-xs-6 col-sm-4">
+                            <div class="plaska-popular">Популярное</div>
+                            <a href="#"><img src="assets/img/img_product.jpg" title="" alt=""/>
+                                <a href="/">
+                                    <p class="pagetitle">Табак Adalya - Cactus (Кактус) 50 гр</p>
+                                </a>
+
+                                <div class="rating">
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <a href="/" class="tinytext"><u>25</u></a>
+                                </div>
+                                <p class="price text-center">1500 &#8381;</p>
+
+                                <p align="center">
+                                <span class="btn4 top-center">
+                                    <button class="btn box"> в корзину</button>
+                                </span>
+                                </p>
+
+                                <div class="availbal text-center">В наличие</div>
+                        </div>
+                        <!--EndProduct-->
+                        <!--Product-->
+                        <div class="product col-md-3 col-xs-6 col-sm-4">
+                            <div class="plaska-discount">Скидка</div>
+                            <a href="#"><img src="assets/img/img_product.jpg" title="" alt=""/>
+                                <a href="/">
+                                    <p class="pagetitle">Табак Adalya - Cactus (Кактус) 50 гр</p>
+                                </a>
+
+                                <div class="rating">
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <a href="/" class="tinytext"><u>25</u></a>
+                                </div>
+                                <p class="price text-center">1500 &#8381;</p>
+
+                                <p align="center">
+                                <span class="btn4 top-center">
+                                    <button class="btn box"> в корзину</button>
+                                </span>
+                                </p>
+
+                                <div class="availbal text-center">В наличие</div>
+                        </div>
+                        <!--EndProduct-->
+                        <!--Product-->
+                        <div class="product col-md-3 col-xs-6 col-sm-4">
+                            <div class="plaska-discount">Скидка</div>
+                            <a href="#"><img src="assets/img/img_product.jpg" title="" alt=""/>
+                                <a href="/">
+                                    <p class="pagetitle">Табак Adalya - Cactus (Кактус) 50 гр</p>
+                                </a>
+
+                                <div class="rating">
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <a href="/" class="tinytext"><u>25</u></a>
+                                </div>
+                                <p class="price text-center">1500 &#8381;</p>
+
+                                <p align="center">
+                                <span class="btn4 top-center">
+                                    <button class="btn box"> в корзину</button>
+                                </span>
+                                </p>
+
+                                <div class="availbal text-center">В наличие</div>
+                        </div>
+                        <!--EndProduct-->
+                    </div>
                 </div>
             </div>
-        </div>
+            <div class="row viewmore text-center">
+                <a href="/"/>Показать еще</a>
+            </div>
     </section>
     <!--EndSection1-->
-    <section class="sec2 catalog">
+
+
+    <article>
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
-                    <aside class="socialnetwork1">
-                        <h4 class="heading">Социальные сети</h4>
-                    </aside>
-                </div>
-                <div class="col-md-9">
-                    <h2 id="hitstitle">Хиты продаж</h2>
-                    <!-- Назад Вперед -->
+                <h2>Лучшие кальяны только в Smokeum</h2>
 
-                        <div class="navigation" id="navigation">
-                            <a href="#" id="js-prev" class="btn4"><span class="icon-angle-left btn box"></span></a>
-                            <a href="#" id="js-next" class="btn4"><span class="icon-angle-right btn box"></span></a>
-                        </div>
+                <p>
+                    Любой желающий купить кальян, сможет у нас подобрать именно то, что он хочет. Широкий ассортимент
+                    кальянов всех разновидностей и ценовых категорий от недорогих моделей до элитного эксклюзива.
+                    Кроме собственно кальянов, у нас представлено 9 табачных коллекций с самыми изысканными ароматами,
+                    которые по достоинству оценит даже самый взыскательный любитель. Широчайший диапазон вкусов от
+                    нежнейшего до резкого, от пряного до сладковато-медового, выбор за покупателем, но каждый найдет
+                    именно то, что ему по душе.
+                    Также у нас можно приобрести все сопутствующие аксессуары: щипцы, специальный уголь, фольгу, чаши,
+                    шланги и т.д.
+                    Простое оформление заказа и оперативная доставка по любому адресу в пределах страны. А жители или
+                    гости Санкт-Петербурга могут посетить наш шоу-рум и лично опробовать приглянувшийся кальян.
+                    Оплачивается только покупка!
+                    При затруднениях с выбором вам немедленно придут на помощь наши менеджеры и продавцы-консультанты.
+                    Они досконально знают все особенности представленного товара и квалифицированно помогут вам сделать
+                    наилучший выбор. Мы дорожим каждым покупателем и потому стремимся предложить именно то, что ему
+                    нужно
 
-
-                    <div class="row hits owl-carousel owl-carousel1">
-                        <!--Product-->
-                        <div class="product">
-                            <div class="plaska-news">Новинка</div>
-                            <a href="#"><img src="assets/img/img_product.jpg" title="" alt=""/>
-                                <a href="/">
-                                <p class="pagetitle">Табак Adalya - Cactus (Кактус) 50 гр</p>
-                                 </a>
-
-                                <div class="rating">
-                                    <span class="icon-star"></span>
-                                    <span class="icon-star"></span>
-                                    <span class="icon-star"></span>
-                                    <span class="icon-star"></span>
-                                    <span class="icon-star"></span>
-                                    <a href="/" class="tinytext"><u>25</u></a>
-                                </div>
-                                <p class="price text-center">1500 &#8381;</p>
-
-                                <p align="center">
-                                <span class="btn4 top-center">
-                                    <button class="btn box"> в корзину</button>
-                                </span>
-                                </p>
-
-                                <div class="availbal text-center">В наличие</div>
-                        </div>
-                    <!--EndProduct-->
-                        <!--Product-->
-                        <div class="product">
-                            <div class="plaska-news">Новинка</div>
-                            <a href="#"><img src="assets/img/img_product.jpg" title="" alt=""/>
-                                <a href="/">
-                                    <p class="pagetitle">Табак Adalya - Cactus (Кактус) 50 гр</p>
-                                </a>
-
-                                <div class="rating">
-                                    <span class="icon-star"></span>
-                                    <span class="icon-star"></span>
-                                    <span class="icon-star"></span>
-                                    <span class="icon-star"></span>
-                                    <span class="icon-star"></span>
-                                    <a href="/" class="tinytext"><u>25</u></a>
-                                </div>
-                                <p class="price text-center">1500 &#8381;</p>
-
-                                <p align="center">
-                                <span class="btn4 top-center">
-                                    <button class="btn box"> в корзину</button>
-                                </span>
-                                </p>
-
-                                <div class="availbal text-center">В наличие</div>
-                        </div>
-                        <!--EndProduct-->
-                        <!--Product-->
-                        <div class="product">
-                            <div class="plaska-news">Новинка</div>
-                            <a href="#"><img src="assets/img/img_product.jpg" title="" alt=""/>
-                                <a href="/">
-                                    <p class="pagetitle">Табак Adalya - Cactus (Кактус) 50 гр</p>
-                                </a>
-
-                                <div class="rating">
-                                    <span class="icon-star"></span>
-                                    <span class="icon-star"></span>
-                                    <span class="icon-star"></span>
-                                    <span class="icon-star"></span>
-                                    <span class="icon-star"></span>
-                                    <a href="/" class="tinytext"><u>25</u></a>
-                                </div>
-                                <p class="price text-center">1500 &#8381;</p>
-
-                                <p align="center">
-                                <span class="btn4 top-center">
-                                    <button class="btn box"> в корзину</button>
-                                </span>
-                                </p>
-
-                                <div class="availbal text-center">В наличие</div>
-                        </div>
-                        <!--EndProduct-->
-                        <!--Product-->
-                        <div class="product">
-                            <div class="plaska-news">Новинка</div>
-                            <div class="product_btn">
-                                <a href="/" class="btn3"><span class="sprite1-heart"></span></a>
-                                <a href="/" class="btn3"><span class="sprite1-compare"></span></a>
-                                <a class="btn3" href="/"><span class="sprite1-search"></span></a>
-                            </div>
-                            <a href="#"><img src="assets/img/img_product.jpg" title="" alt=""/>
-                                <a href="/">
-                                    <p class="pagetitle">Табак Adalya - Cactus (Кактус) 50 гр</p>
-                                </a>
-
-                                <div class="rating">
-                                    <span class="icon-star"></span>
-                                    <span class="icon-star"></span>
-                                    <span class="icon-star"></span>
-                                    <span class="icon-star"></span>
-                                    <span class="icon-star"></span>
-                                    <a href="/" class="tinytext"><u>25</u></a>
-                                </div>
-                                <p class="price text-center">1500 &#8381;</p>
-
-                                <p align="center">
-                                <span class="btn4 top-center">
-                                    <button class="btn box"> в корзину</button>
-                                </span>
-                                </p>
-
-                                <div class="availbal text-center">В наличие</div>
-                        </div>
-                        <!--EndProduct-->
-                        <!--Product-->
-                        <div class="product">
-                            <div class="plaska-news">Новинка</div>
-                            <a href="#"><img src="assets/img/img_product.jpg" title="" alt=""/>
-                                <a href="/">
-                                    <p class="pagetitle">Табак Adalya - Cactus (Кактус) 50 гр</p>
-                                </a>
-
-                                <div class="rating">
-                                    <span class="icon-star"></span>
-                                    <span class="icon-star"></span>
-                                    <span class="icon-star"></span>
-                                    <span class="icon-star"></span>
-                                    <span class="icon-star"></span>
-                                    <a href="/" class="tinytext"><u>25</u></a>
-                                </div>
-                                <p class="price text-center">1500 &#8381;</p>
-
-                                <p align="center">
-                                <span class="btn4 top-center">
-                                    <button class="btn box"> в корзину</button>
-                                </span>
-                                </p>
-
-                                <div class="availbal text-center">В наличие</div>
-                        </div>
-                        <!--EndProduct-->
-                    </div>
-  <!--EndProductesLine-->
-                     <h2 id="bestofferstitle">Лучшие предложения</h2>
-
-                        <div class="navigation" id="navigation2">
-                            <a href="#" id="js-prev2" class="btn4">
-                                <span class="icon-angle-left box btn"></span>
-                            </a>
-                            <a href="#" id="js-next2"  class="btn4"><span class="icon-angle-right box btn"></span></a>
-                        </div>
-
-
-                        <div class="row best owl-carousel owl-carousel2">
-                            <!--Product-->
-                            <div class="product">
-                                <div class="plaska-news">Новинка</div>
-                                <a href="#"><img src="assets/img/img_product.jpg" title="" alt=""/>
-                                    <a href="/">
-                                        <p class="pagetitle">Табак Adalya - Cactus (Кактус) 50 гр</p>
-                                    </a>
-
-                                    <div class="rating">
-                                        <span class="icon-star"></span>
-                                        <span class="icon-star"></span>
-                                        <span class="icon-star"></span>
-                                        <span class="icon-star"></span>
-                                        <span class="icon-star"></span>
-                                        <a href="/" class="tinytext"><u>25</u></a>
-                                    </div>
-                                    <p class="price text-center">1500 &#8381;</p>
-
-                                    <p align="center">
-                                <span class="btn4 top-center">
-                                    <button class="btn box"> в корзину</button>
-                                </span>
-                                    </p>
-
-                                    <div class="availbal text-center">В наличие</div>
-                            </div>
-                            <!--EndProduct-->
-                            <!--Product-->
-                            <div class="product">
-                                <div class="plaska-news">Новинка</div>
-                                <a href="#"><img src="assets/img/img_product.jpg" title="" alt=""/>
-                                    <a href="/">
-                                        <p class="pagetitle">Табак Adalya - Cactus (Кактус) 50 гр</p>
-                                    </a>
-
-                                    <div class="rating">
-                                        <span class="icon-star"></span>
-                                        <span class="icon-star"></span>
-                                        <span class="icon-star"></span>
-                                        <span class="icon-star"></span>
-                                        <span class="icon-star"></span>
-                                        <a href="/" class="tinytext"><u>25</u></a>
-                                    </div>
-                                    <p class="price text-center">1500 &#8381;</p>
-
-                                    <p align="center">
-                                <span class="btn4 top-center">
-                                    <button class="btn box"> в корзину</button>
-                                </span>
-                                    </p>
-
-                                    <div class="availbal text-center">В наличие</div>
-                            </div>
-                            <!--EndProduct-->
-                            <!--Product-->
-                            <div class="product">
-                                <div class="plaska-news">Новинка</div>
-                                <a href="#"><img src="assets/img/img_product.jpg" title="" alt=""/>
-                                    <a href="/">
-                                        <p class="pagetitle">Табак Adalya - Cactus (Кактус) 50 гр</p>
-                                    </a>
-
-                                    <div class="rating">
-                                        <span class="icon-star"></span>
-                                        <span class="icon-star"></span>
-                                        <span class="icon-star"></span>
-                                        <span class="icon-star"></span>
-                                        <span class="icon-star"></span>
-                                        <a href="/" class="tinytext"><u>25</u></a>
-                                    </div>
-                                    <p class="price text-center">1500 &#8381;</p>
-
-                                    <p align="center">
-                                <span class="btn4 top-center">
-                                    <button class="btn box"> в корзину</button>
-                                </span>
-                                    </p>
-
-                                    <div class="availbal text-center">В наличие</div>
-                            </div>
-                            <!--EndProduct-->
-                            <!--Product-->
-                            <div class="product">
-                                <div class="plaska-news">Новинка</div>
-                                <a href="#"><img src="assets/img/img_product.jpg" title="" alt=""/>
-                                    <a href="/">
-                                        <p class="pagetitle">Табак Adalya - Cactus (Кактус) 50 гр</p>
-                                    </a>
-
-                                    <div class="rating">
-                                        <span class="icon-star"></span>
-                                        <span class="icon-star"></span>
-                                        <span class="icon-star"></span>
-                                        <span class="icon-star"></span>
-                                        <span class="icon-star"></span>
-                                        <a href="/" class="tinytext"><u>25</u></a>
-                                    </div>
-                                    <p class="price text-center">1500 &#8381;</p>
-
-                                    <p align="center">
-                                <span class="btn4 top-center">
-                                    <button class="btn box"> в корзину</button>
-                                </span>
-                                    </p>
-
-                                    <div class="availbal text-center">В наличие</div>
-                            </div>
-                            <!--EndProduct-->
-                            <!--Product-->
-                            <div class="product">
-                                <div class="plaska-news">Новинка</div>
-                                <a href="#"><img src="assets/img/img_product.jpg" title="" alt=""/>
-                                    <a href="/">
-                                        <p class="pagetitle">Табак Adalya - Cactus (Кактус) 50 гр</p>
-                                    </a>
-
-                                    <div class="rating">
-                                        <span class="icon-star"></span>
-                                        <span class="icon-star"></span>
-                                        <span class="icon-star"></span>
-                                        <span class="icon-star"></span>
-                                        <span class="icon-star"></span>
-                                        <a href="/" class="tinytext"><u>25</u></a>
-                                    </div>
-                                    <p class="price text-center">1500 &#8381;</p>
-
-                                    <p align="center">
-                                <span class="btn4 top-center">
-                                    <button class="btn box"> в корзину</button>
-                                </span>
-                                    </p>
-
-                                    <div class="availbal text-center">В наличие</div>
-                            </div>
-                            <!--EndProduct-->
-                        </div>
-                </div>
-        </div>
-    </section>
-    <!--EndSectionTwo-->
-
-
-    <section class="sec3">
-        <div class="parallax-window"></div>
-            <div class="container">
-            <h1 class="text-center">почему выбирают нас</h1>
-            <div class="row my-flex-row">
-                <div class="col-md-4  col-xs-12 col-sm-6">
-                    <div class="offers delivery">
-                        <p class="slogan">Бесплатная доставка<br/>
-                            <span>при заказе от 1900  &#8381;</span>
-                        </p>
-                        <div class="gradient"></div>
-                    </div>
-                </div>
-
-                <div class="col-md-4  col-xs-12 col-sm-6">
-                    <div class="offers kolian">
-                        <p class="slogan">Широкий ассортимент</p>
-                        <div class="gradient"></div>
-                    </div>
-                </div>
-
-
-                <div class="col-md-4  col-xs-12 col-sm-6">
-                    <div class="offers discount">
-                        <p class="slogan">Скидки и акции</p>
-                        <div class="gradient"></div>
-                    </div>
-                </div>
-                <div class="col-md-4  col-xs-12 col-sm-6">
-                    <div class="offers garanty">
-                        <p class="slogan">Гарантия качества</p>
-                        <div class="gradient"></div>
-                    </div>
-                </div>
-                <div class="col-md-4  col-xs-12 col-sm-6">
-                    <div class="offers tabako">
-                        <p class="slogan">Большой выбор табака и угля</p>
-                        <div class="gradient"></div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-xs-12 col-sm-6">
-                    <div class="offers gifs">
-                        <p class="slogan">Подарки<br/>
-                            <span>при заказе от 2500 &#8381</span>
-                        </p>
-                        <div class="gradient"></div>
-                    </div>
-                </div>
+                </p>
             </div>
         </div>
+    </article>
 
-    </section>
-    <!--EnddSection3-->
-
-
-
-
-    <section class="sec4">
-        <div class="container">
-            <div class="row"><div class="col-md-12">
-                <div id="accordion">
-                    <h3>Магазин кальянов Smokeum в Санкт-Петербурге</h3>
-                    <div>
-                        <p>
-                            Для тех жителей и гостей Санкт-Петербурга, которые решили приобрести кальян оптимальным решением будет обратиться в магазин «Smokeum», специализирующийся на торговле именно кальянами.
-                            Причины, побудившие человека купить кальян, могут быть самыми разными: поиск оригинального подарка курящему коллеге или приятелю, желание разнообразить свой досуг, смакуя приятный аромат и т.д. Важно, чтобы покупатель был доволен приобретением, и магазин «Smokeum» это обеспечит. Широкий выбор при безупречном качестве любого варианта, высокий уровень сервиса в сочетании с низкими ценами именно это ожидает посетителей нашего магазина.
-                        </p>
-                    </div>
-                    <h3>Почему стоит купить кальян в нашем магазине?</h3>
-                    <div>
-                        <p>
-                            Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
-                            purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
-                            velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
-                            suscipit faucibus urna.
-                        </p>
-                    </div>
-                    <h3>Лучшие кальяны только в Smokeum</h3>
-                    <div>
-                        <p>
-                            Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
-                            Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
-                            ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
-                            lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
-                        </p>
-                         </div>
-                    <h3>Приобретение кальяна для домашнего использования</h3>
-                    <div>
-                        <p>
-                            Cras dictum. Pellentesque habitant morbi tristique senectus et netus
-                            et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
-                            faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
-                            mauris vel est.
-                        </p>
-                                            </div>
-                    <h3> Приобретение кальяна для домашнего использования</h3>
-                        <div>
-                            <p>
-                                Cras dictum. Pellentesque habitant morbi tristique senectus et netus
-                                et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
-                                faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
-                                mauris vel est.
-                            </p>
-                    </div>
-                    <h3>Почему кальян так популярен?</h3>
-                    <div>
-                        <p>
-                            Cras dictum. Pellentesque habitant morbi tristique senectus et netus
-                            et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
-                            faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
-                            mauris vel est.
-                        </p>
-                    </div>
-          </div>
-
-
-            </div></div>
-        </div>
-    </section>
     <div class="heightfix"></div>
 </div>
 
@@ -719,104 +794,21 @@
 <script src="assets/js/parallax.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="assets/js/owl.carousel.js"></script>
+<script src="assets/js/jquery.formstyler.min.js"></script>
 <script src="assets/js/functions.js"></script>
 <script src="assets/js/jquery.pixlayout.0.9.7.js"></script>
-
 </body>
 <script>
-    $(function () {
-    /* $.pixlayout({
-            src: "assets/img/img_1920.jpg",
-            opacity: 0.6,
-            top: 0,
-            center: false,
-            clip: true,
-            show: false
-        });*/
-        $('.parallax-window').parallax({imageSrc: 'assets/img/parallax2.jpg'});
-        $( "#accordion" ).accordion();
-        $('.ui-accordion-header').each(function(){
-            if($(this).hasClass('ui-accordion-header-active'))
-            {
-                $(this).find('.ui-accordion-header-icon').addClass('icon-chevron-up');
-            }
-            else
-            {
-                $(this).find('.ui-accordion-header-icon').addClass('icon-chevron-down');
-            }
-        });
-        $('.icon-chevron-up').on ('click',function(){
-            console.log('up');
-            $(this).addClass('icon-chevron-down');
-            $(this).removeClass('icon-chevron-up');
-        });
-        $('.icon-chevron-down').on('click',function(){
-            console.log('down');
-            $(this).addClass('icon-chevron-up');
-            $(this).removeClass('icon-chevron-down');
-        });
-        window.owl = $('.owl-carousel1');
-        window.owl2=$('.owl-carousel2');
-       owl.owlCarousel({
-            loop:true,
-            navigation: true,
-            responsiveClass:true,
-            nav:true,
-            responsive:{
-                0:{
-                    items:2,
-                    nav:true
-                },
-                640:{
-                    items:3,
-                    navigation:true
-                },
-                1024:{
-                    items:4,
-                    nav:true,
-                    loop:false
-                }
-            }
-        });
-      owl2.owlCarousel({
-            loop:true,
-            navigation: true,
-            responsiveClass:true,
-            nav:true,
-            responsive:{
-                0:{
-                    items:2,
-                    nav:true
-                },
-                640:{
-                    items:3,
-                    navigation:true
-                },
-                1024:{
-                    items:4,
-                    nav:true,
-                    loop:false
-                }
-            }
-        });
-       $('#js-prev').click(function() {
-            owl.trigger('prev.owl.carousel');
-            return false;
-        })
-        $('#js-next').click(function() {
-            owl.trigger('next.owl.carousel', [300]);
-            return false;
-        });
-        $('#js-prev2').click(function() {
-            owl2.trigger('prev.owl.carousel');
-            return false;
-        })
-// Go to the previous item
-        $('#js-next2').click(function() {
-            owl2.trigger('next.owl.carousel', [300]);
-            return false;
-        });
+   /* $(function () {
+        $.pixlayout({
+         src: "assets/img/smokeum_catalog_1920px.jpg",
+         opacity: 0.6,
+         top: 0,
+         center: false,
+         clip: true,
+         show: false
+         });
 
-    });
+    });*/
 </script>
 </html>
